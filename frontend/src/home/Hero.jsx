@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('/images/Chettinad-bg-mobile.webp')] md:bg-[url('/images/Chettinad-bg-desktop.webp')] relative flex items-center overflow-hidden pt-8 pb-0 lg:py-0">
+    <div className="w-full h-screen relative flex items-center overflow-hidden pt-8 pb-0 lg:py-0">
       <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full">
         {/* Left side: Person image */}
         <motion.div 
