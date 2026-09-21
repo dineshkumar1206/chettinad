@@ -8,7 +8,7 @@ const South = () => {
 
         {/* Left side: Person image */}
         <motion.div
-          className="w-full lg:w-4/12 flex justify-center lg:justify-start items-end relative z-10 h-full lg:self-end"
+          className="w-full lg:w-auto lg:absolute lg:left-0 lg:bottom-0 flex justify-center lg:justify-start items-end z-10 lg:h-[70%]"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -17,34 +17,34 @@ const South = () => {
           <img
             src="/images/second-component.png"
             alt="Chettinad Person Thinking"
-            className="w-[60%] sm:w-[50%] lg:w-[115%] lg:max-w-none h-auto drop-shadow-xl object-contain object-bottom translate-y-0 lg:-translate-y-4"
+            className="w-[50%] sm:w-[40%] lg:w-auto lg:h-full drop-shadow-xl object-contain object-bottom lg:object-left-bottom"
           />
         </motion.div>
 
         {/* Right side: Content */}
         <motion.div
-          className="w-full lg:w-8/12 flex flex-col items-center text-center z-10 lg:pl-8 xl:pl-12"
+          className="w-full lg:pl-32 xl:pl-40 flex flex-col items-center text-center z-10 relative"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
 
-          <div className="text-sm sm:text-base md:text-xl lg:text-[22px] text-[#4a3b2c] font-serif mb-1 lg:mb-2">
+          <div className="text-sm sm:text-base md:text-xl lg:text-[22px] text-[#4a3b2c] font-serif mb-0 lg:mb-1">
             Before we go any further,<br className="hidden sm:block" />
             let me ask you something...
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] font-serif text-[#2a3822] font-bold leading-[1.15] mb-2 lg:mb-4 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] font-serif text-[#2a3822] font-bold leading-[1.15] mb-1 lg:mb-2 tracking-tight">
             When you hear<br />
             'South Indian food',<br />
-            <span className="text-xl sm:text-2xl lg:text-[32px] font-medium text-[#3a4a32] mt-1 lg:mt-2 block">
+            <span className="text-xl sm:text-2xl lg:text-[32px] font-medium text-[#3a4a32] mt-0 lg:mt-1 block">
               what comes to mind?
             </span>
           </h2>
 
           {/* Flower divider */}
-          <div className="text-[#8a3020] text-lg lg:text-xl my-1">
+          <div className="text-[#8a3020] text-lg lg:text-xl">
             ✽
           </div>
 
@@ -52,7 +52,7 @@ const South = () => {
           <motion.img
             src="/images/image-items-2.png"
             alt="South Indian Food Items"
-            className="w-full max-w-2xl mx-auto mt-1 mb-3 lg:mt-2 lg:mb-6 drop-shadow-md"
+            className="w-full max-w-3xl mx-auto drop-shadow-md"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -60,7 +60,7 @@ const South = () => {
           />
 
           {/* Bottom Text */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-[#5a4036] font-serif text-xs sm:text-base lg:text-xl mb-2 lg:mb-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-[#5a4036] font-serif text-xs sm:text-base lg:text-xl mb-1 lg:mb-3 mt-2 lg:mt-4">
             <span className="font-bold text-[#6a1b0a] italic text-base sm:text-xl lg:text-2xl">"Exactly."</span>
             <span className="hidden sm:block text-[#a09080]">|</span>
             <span>And there's absolutely nothing wrong with that.</span>
