@@ -7,13 +7,13 @@ const Intrest = () => {
       <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 h-full relative z-10 text-center">
         
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col items-center"
         >
-          <div className="text-sm sm:text-base md:text-xl lg:text-[22px] text-[#4a3b2c] font-serif mb-2 lg:mb-4">
+          <div className="text-sm sm:text-base md:text-xl lg:text-[22px] text-[#2a3822] font-serif mb-2 lg:mb-4">
             So... shall we see what else is on the table?
           </div>
 
@@ -29,29 +29,19 @@ const Intrest = () => {
 
         <motion.div
           className="w-full flex justify-center mb-10 lg:mb-16"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          initial={{ opacity: 0, y: 40, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <img
-            src="/images/Imagefor3.png"
+            src="/images/cm-3.webp"
             alt="Chettinad Interesting Dishes"
-            className="w-full max-w-5xl h-auto drop-shadow-xl object-contain"
+            className="w-full lg:w-[80%] lg:max-w-4xl xl:max-w-5xl h-auto drop-shadow-xl object-contain mx-auto"
           />
         </motion.div>
 
-        <motion.button
-          whileHover={{ scale: 1.05, backgroundColor: "#5a1b0a" }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-[#782312] text-white rounded-full px-6 py-2 md:px-8 md:py-3 lg:px-10 lg:py-4 text-xs md:text-sm lg:text-base font-bold tracking-widest transition-all duration-300 flex items-center gap-2 lg:gap-3 shadow-lg"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          And that's just the beginning. <span className="text-lg lg:text-xl">&rarr;</span>
-        </motion.button>
+
         
       </div>
     </div>

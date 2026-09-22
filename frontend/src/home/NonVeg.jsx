@@ -5,11 +5,11 @@ const NonVeg = () => {
   return (
     <div className="w-full min-h-screen relative flex items-center justify-center py-10 lg:py-16 overflow-hidden">
       <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full relative z-10 text-center">
-        
+
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col items-center max-w-4xl mx-auto"
         >
@@ -35,63 +35,31 @@ const NonVeg = () => {
 
         <motion.div
           className="w-full flex justify-center flex-grow items-center mb-6 relative"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          initial={{ opacity: 0, y: 40, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <div className="relative w-full max-w-6xl">
-            
-            {/* Dish 1: Chicken Chettinad */}
-            <div className="absolute top-[-5%] sm:top-0 left-0 sm:left-[8%] flex flex-col items-center transform -rotate-3 z-20">
-              <span className="text-[#3a2d21] font-bold text-xs sm:text-sm md:text-base uppercase tracking-wider mb-1" style={{fontFamily: "'Just Another Hand', 'Comic Sans MS', cursive"}}>Chicken Chettinad</span>
-              <svg width="60" height="40" viewBox="0 0 100 60" className="hidden sm:block opacity-80" style={{ transform: 'rotate(15deg)' }}>
-                <path d="M 10 10 Q 40 40 80 50" fill="transparent" stroke="#3a2d21" strokeWidth="2" strokeLinecap="round" />
-                <polygon points="80,50 72,44 75,55" fill="#3a2d21" />
-              </svg>
-            </div>
-            
-            {/* Dish 2: Mutton Kolaurundai */}
-            <div className="absolute top-[-10%] sm:top-[-8%] left-[25%] sm:left-[32%] flex flex-col items-center transform -rotate-1 z-20">
-              <span className="text-[#3a2d21] font-bold text-xs sm:text-sm md:text-base uppercase tracking-wider mb-1" style={{fontFamily: "'Just Another Hand', 'Comic Sans MS', cursive"}}>Mutton Kolaurundai</span>
-              <svg width="40" height="50" viewBox="0 0 60 80" className="hidden sm:block opacity-80">
-                <path d="M 30 10 Q 40 50 35 70" fill="transparent" stroke="#3a2d21" strokeWidth="2" strokeLinecap="round" />
-                <polygon points="35,70 30,60 42,62" fill="#3a2d21" />
-              </svg>
-            </div>
-
-            {/* Dish 3: Nandu Curry */}
-            <div className="absolute top-[-10%] sm:top-[-8%] right-[25%] sm:right-[32%] flex flex-col items-center transform rotate-1 z-20">
-              <span className="text-[#3a2d21] font-bold text-xs sm:text-sm md:text-base uppercase tracking-wider mb-1" style={{fontFamily: "'Just Another Hand', 'Comic Sans MS', cursive"}}>Nandu Curry</span>
-              <svg width="40" height="50" viewBox="0 0 60 80" className="hidden sm:block opacity-80" style={{ transform: 'scaleX(-1)' }}>
-                <path d="M 30 10 Q 40 50 35 70" fill="transparent" stroke="#3a2d21" strokeWidth="2" strokeLinecap="round" />
-                <polygon points="35,70 30,60 42,62" fill="#3a2d21" />
-              </svg>
-            </div>
-
-            {/* Dish 4: Meen Kuzhambu */}
-            <div className="absolute top-[-5%] sm:top-0 right-0 sm:right-[8%] flex flex-col items-center transform rotate-3 z-20">
-              <span className="text-[#3a2d21] font-bold text-xs sm:text-sm md:text-base uppercase tracking-wider mb-1" style={{fontFamily: "'Just Another Hand', 'Comic Sans MS', cursive"}}>Meen Kuzhambu</span>
-              <svg width="60" height="40" viewBox="0 0 100 60" className="hidden sm:block opacity-80" style={{ transform: 'rotate(-15deg) scaleX(-1)' }}>
-                <path d="M 10 10 Q 40 40 80 50" fill="transparent" stroke="#3a2d21" strokeWidth="2" strokeLinecap="round" />
-                <polygon points="80,50 72,44 75,55" fill="#3a2d21" />
-              </svg>
-            </div>
 
             <img
-              src="/images/imagefor4.png"
+              src="/images/cm-4.webp"
               alt="Chettinad Non-Vegetarian Dishes"
-              className="w-full h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10"
+              className="w-[95%] lg:w-[90%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10 transform translate-x-2 lg:translate-x-8"
+              style={{
+                WebkitMaskImage: 'linear-gradient(to right, black 96%, transparent 100%)',
+                maskImage: 'linear-gradient(to right, black 96%, transparent 100%)'
+              }}
             />
           </div>
         </motion.div>
 
         <motion.div
           className="flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-12 w-full mt-auto"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         >
           <div className="flex items-center gap-3">
             <p className="text-lg md:text-xl lg:text-2xl text-[#782312] font-serif font-medium italic text-right">
@@ -107,18 +75,9 @@ const NonVeg = () => {
               </svg>
             </div>
           </div>
-          
-          <div className="hidden sm:block h-16 w-[1px] bg-[#782312]/30"></div>
 
-          <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: "#5a1b0a" }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[#782312] text-white rounded-full px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 text-sm md:text-base font-bold tracking-widest transition-all duration-300 flex items-center gap-2 lg:gap-3 shadow-lg"
-          >
-            Come. There's more. <span className="text-lg lg:text-xl">&rarr;</span>
-          </motion.button>
         </motion.div>
-        
+
       </div>
     </div>
   );

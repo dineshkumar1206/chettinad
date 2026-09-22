@@ -4,17 +4,17 @@ import { motion } from 'framer-motion';
 const BeyondHome = () => {
   return (
     <div className="w-full min-h-screen lg:h-screen flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
-      
+
       {/* Left Column: Content */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8 }}
         className="w-full lg:w-[45%] xl:w-[40%] flex flex-col items-center justify-center p-6 sm:p-10 lg:p-12 xl:p-16 h-full order-2 lg:order-1"
       >
         <div className="max-w-md mx-auto ml-10 sm:ml-16 lg:ml-24 xl:ml-32 flex flex-col items-center text-center w-full">
-          
+
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
             TAKING<br />
             CHETTINAD<br />
@@ -35,12 +35,12 @@ const BeyondHome = () => {
 
           {/* Icons Row */}
           <div className="flex flex-row items-start justify-center gap-4 sm:gap-6 w-full mb-4">
-            
+
             {/* Icon 1 */}
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#af5a3e] flex flex-col items-center justify-center p-2 mb-2">
                 <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                <span className="text-white text-[9px] sm:text-[10px] font-bold leading-tight uppercase text-center">Speciality<br/>Counter</span>
+                <span className="text-white text-[9px] sm:text-[10px] font-bold leading-tight uppercase text-center">Speciality<br />Counter</span>
               </div>
             </div>
 
@@ -48,7 +48,7 @@ const BeyondHome = () => {
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#af5a3e] flex flex-col items-center justify-center p-2 mb-2">
                 <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
-                <span className="text-white text-[9px] sm:text-[10px] font-bold leading-tight uppercase text-center">Live Food<br/>Experience</span>
+                <span className="text-white text-[9px] sm:text-[10px] font-bold leading-tight uppercase text-center">Live Food<br />Experience</span>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ const BeyondHome = () => {
                 <span className="text-white text-[9px] sm:text-[10px] font-bold leading-tight uppercase text-center">Kiosk</span>
               </div>
             </div>
-            
+
           </div>
 
           <p className="text-sm sm:text-base text-[#1e2917] font-serif leading-snug mb-4 px-4">
@@ -88,20 +88,22 @@ const BeyondHome = () => {
       </motion.div>
 
       {/* Right Column: Full Bleed Image */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="w-full lg:w-[50%] xl:w-[55%] h-[50vh] lg:h-full relative order-1 lg:order-2 ml-auto"
+        className="w-full lg:w-[50%] xl:w-[55%] h-[50vh] lg:h-full relative order-1 lg:order-2 ml-auto flex items-center justify-end py-4 lg:py-10 pl-4 lg:pl-10 pr-0"
       >
-        <img 
-          src="/images/Imagefor7.png" 
-          alt="Chettinad Bites Food Court" 
-          className="w-full h-full object-cover"
-          style={{ 
-            maskImage: 'linear-gradient(to right, transparent 0%, black 20%)',
-            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 20%)' 
+        <img
+          src="/images/Chettinad.png"
+          alt="Chettinad Bites Food Court"
+          className="w-full h-full object-contain object-right"
+          style={{
+            maskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 100%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 100%)',
+            WebkitMaskComposite: 'source-in',
+            maskComposite: 'intersect'
           }}
         />
       </motion.div>

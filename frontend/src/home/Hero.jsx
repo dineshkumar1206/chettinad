@@ -53,25 +53,14 @@ const Hero = () => {
 
           {/* Small Text Area */}
           <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 sm:gap-6 lg:gap-8 mb-4 lg:mb-6 text-[#4a2016]">
-            <div className="flex flex-col items-center">
-              <div style={{ fontFamily: "'Pacifico', 'Grand Hotel', 'Cookie', cursive" }} className="font-normal text-2xl sm:text-3xl lg:text-4xl leading-[1.2] text-center transform -rotate-2 text-[#3a1005]">
-                "Vanakkam.<br />Come in."
-              </div>
-              <svg width="120" height="12" viewBox="0 0 120 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="mt-1 opacity-80">
-                <path d="M5 5Q30 8 60 4T115 5" stroke="#4a2016" strokeWidth="2.5" strokeLinecap="round" />
-                <path d="M15 10Q45 12 85 8T110 9" stroke="#4a2016" strokeWidth="2" strokeLinecap="round" />
-              </svg>
+            <div className="flex flex-col items-center mt-3">
+              <img src="/images/cm-1.webp" alt="Vanakkam" className="h-20 lg:h-24 object-contain" />
             </div>
             
             <div className="hidden sm:block w-[1px] h-12 bg-[#8a7060]/40"></div>
             
             <div className="text-xs sm:text-sm lg:text-[16px] not-italic leading-tight text-center sm:text-left text-[#5a4036] font-serif relative top-2">
               And yes,<br />we have idli<br />and dosa too. 
-              <span className="block text-right pr-2 mt-1">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3a1005" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block">
-                  <path d="M8 9v3M16 9v3M7 16c1.5 2 7.5 2 10 0" />
-                </svg>
-              </span>
             </div>
           </div>
 

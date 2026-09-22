@@ -48,48 +48,16 @@ const South = () => {
             ✽
           </div>
 
-          {/* Center Image (Food Items) with Overlays */}
-          <motion.div
-            className="relative w-[95%] sm:w-[85%] lg:w-full max-w-2xl mx-auto my-1 lg:my-2"
+          {/* Center Image (Food Items) */}
+          <motion.img
+            src="/images/cm-2.webp"
+            alt="South Indian Food Items"
+            className="w-[95%] sm:w-[85%] lg:w-full max-w-2xl mx-auto drop-shadow-md my-1 lg:my-2 relative z-10"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            <img
-              src="/images/image-items-2.png"
-              alt="South Indian Food Items"
-              className="w-full drop-shadow-md relative z-10"
-            />
-            
-            {/* Hand-drawn Labels and Swirls Overlay */}
-            <div className="absolute inset-0 flex z-20 pointer-events-none">
-              {['IDLI', 'DOSA', 'VADA', 'COFFEE'].map((item, index) => (
-                <div key={item} className="flex-1 relative flex flex-col items-center">
-                  {/* Label */}
-                  <div 
-                    style={{ fontFamily: "'Yellowtail', cursive" }} 
-                    className="absolute -top-2 sm:-top-4 lg:-top-6 text-[#4a2016] text-xl sm:text-2xl lg:text-3xl transform -rotate-3 tracking-wide"
-                  >
-                    {item}
-                    {/* Hand-drawn underline */}
-                    <div className="absolute -bottom-1 left-0 w-full h-[2px] bg-[#4a2016] rounded-full transform -rotate-1 opacity-80"></div>
-                  </div>
-                  
-                  {/* Circular Swirls (Organic shapes using border-radius) */}
-                  <div className={`absolute top-[15%] bottom-[5%] left-[5%] right-[5%] border-[1.5px] border-[#4a2016] opacity-60 rounded-[50%_60%_50%_40%/50%_40%_60%_50%] transform ${index % 2 === 0 ? 'rotate-12' : '-rotate-6'}`}></div>
-                  <div className={`absolute top-[12%] bottom-[8%] left-[8%] right-[2%] border-[1.5px] border-[#4a2016] opacity-40 rounded-[40%_50%_60%_50%/60%_50%_40%_50%] transform ${index % 2 === 0 ? '-rotate-12' : 'rotate-6'}`}></div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Bottom Text */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-[#5a4036] font-serif text-xs sm:text-sm lg:text-lg mb-1 lg:mb-2 relative z-10">
-            <span style={{ fontFamily: "'Yellowtail', cursive" }} className="font-normal text-[#6a1b0a] text-2xl sm:text-3xl lg:text-4xl tracking-wide pr-1">"Exactly."</span>
-            <span className="hidden sm:block text-[#a09080]">|</span>
-            <span>And there's absolutely nothing wrong with that.</span>
-          </div>
+          />
 
           <h3 className="text-base sm:text-lg lg:text-[24px] font-serif text-[#2a3822] font-bold mt-1">
             But that's only one little corner of a very big table.

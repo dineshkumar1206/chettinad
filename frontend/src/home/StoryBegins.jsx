@@ -10,11 +10,11 @@ const StoryBegins = () => {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-full lg:w-1/2 flex flex-col items-center lg:items-end justify-center py-4 h-full"
+          className="w-full lg:w-[70%] flex flex-col items-center lg:items-center justify-center py-4 h-full"
         >
-          <div className="max-w-xl flex flex-col items-center text-center lg:mr-16 xl:mr-24">
+          <div className="max-w-2xl flex flex-col items-center text-center lg:mr-8 xl:mr-12">
             
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
               AND THAT'S WHERE<br />
@@ -77,17 +77,17 @@ const StoryBegins = () => {
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full lg:w-1/2 flex items-center justify-center lg:justify-end mt-10 lg:mt-10 relative top-[2%]"
+          className="w-full lg:w-[30%] flex items-center justify-center lg:justify-end mt-10 lg:mt-10 relative top-[2%]"
         >
           <img
-            src="/images/Imagefor6.png"
+            src="/images/ShriSuvarna.png"
             alt="Family eating Chettinad food"
-            className="w-full h-auto object-contain max-h-[85vh] lg:max-h-none"
+            className="w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-125 -translate-x-8 lg:-translate-x-32 -translate-y-4 lg:-translate-y-12"
             style={{ 
-              maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
-              WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)' 
+              maskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)' 
             }}
           />
         </motion.div>
