@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="w-full h-[100svh] lg:h-screen relative flex items-center overflow-hidden pt-12 lg:pt-0 bg-transparent">
+    <div className="w-full h-[100svh] lg:h-screen relative flex items-center overflow-hidden pt-6 sm:pt-12 lg:pt-0 bg-transparent">
       <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full gap-8 lg:gap-0">
         {/* Left side: Person image */}
         <motion.div 
-          className="w-full lg:w-5/12 flex justify-center lg:justify-start items-end lg:items-center relative z-10 lg:self-end h-auto lg:h-full"
+          className="w-full lg:w-5/12 flex justify-center lg:justify-start items-end lg:items-center relative z-10 lg:self-end h-auto lg:h-full pb-4 lg:pb-0"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
@@ -16,13 +16,13 @@ const Hero = () => {
           <img 
             src="/images/first-component.webp" 
             alt="Chettinad Person" 
-            className="w-[45%] sm:w-[35%] md:w-[30%] lg:w-[75%] lg:max-w-none h-auto drop-shadow-2xl object-contain object-bottom -translate-y-4 lg:translate-y-20 xl:translate-y-24 translate-x-2 lg:translate-x-12 xl:translate-x-16" 
+            className="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[75%] lg:max-w-none h-auto drop-shadow-2xl object-contain object-bottom -translate-y-16 sm:-translate-y-8 lg:translate-y-20 xl:translate-y-24 translate-x-2 lg:translate-x-12 xl:translate-x-16" 
           />
         </motion.div>
 
         {/* Right side: Content */}
         <motion.div 
-          className="w-full lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left z-10 lg:pl-8 xl:pl-16 pb-4 lg:pb-0 mt-12 lg:mt-0"
+          className="w-full lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left z-10 lg:pl-8 xl:pl-16 pb-4 lg:pb-0 mt-6 sm:mt-12 lg:mt-0"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
@@ -45,7 +45,7 @@ const Hero = () => {
           </h1>
           
           {/* Description */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-[20px] text-[#4a4036] mb-3 lg:mb-5 font-serif leading-[1.25] max-w-xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-[20px] text-[#4a4036] mb-3 lg:mb-5 font-serif leading-[1.25] max-w-xl px-10 sm:px-0">
             A journey into the flavours of Chettinad —<br className="hidden sm:block" />
             where food is generous, spices have stories,<br className="hidden sm:block" />
             and the familiar is only the beginning.
