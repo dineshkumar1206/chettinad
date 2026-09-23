@@ -13,9 +13,9 @@ const Speciality = () => {
         transition={{ duration: 0.8 }}
         className="w-full lg:w-[45%] xl:w-[45%] flex flex-col justify-center p-4 sm:p-6 lg:p-8 xl:p-10 h-full order-2 lg:order-1"
       >
-        <div className="max-w-lg mx-auto ml-10 sm:ml-16 lg:ml-24 xl:ml-32 flex flex-col items-start w-full">
+        <div className="max-w-lg mx-auto ml-10 sm:ml-16 lg:ml-32 xl:ml-48 flex flex-col items-start w-full">
           
-          <div className="text-center w-full mb-6">
+          <div className="text-center w-full mb-6 lg:-translate-x-8 xl:-translate-x-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-3">
               A SPECIALITY.<br />
               NOT JUST ANOTHER COUNTER.
@@ -104,8 +104,10 @@ const Speciality = () => {
           alt="Chettinad Bites Speciality" 
           className="w-full h-full object-cover"
           style={{ 
-            maskImage: 'linear-gradient(to right, transparent 0%, black 20%)',
-            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 20%)' 
+            maskImage: 'linear-gradient(to right, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 20%)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 20%)',
+            WebkitMaskComposite: 'source-in',
+            maskComposite: 'intersect'
           }}
         />
       </motion.div>
