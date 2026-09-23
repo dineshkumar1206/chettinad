@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const BeyondHome = () => {
   return (
-    <div className="w-full min-h-screen lg:h-screen flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
+    <div className="w-full h-auto lg:h-screen flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
 
       {/* Left Column: Content */}
       <motion.div
@@ -69,15 +69,15 @@ const BeyondHome = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="w-full lg:w-[50%] xl:w-[55%] h-[50vh] lg:h-full relative order-1 lg:order-2 ml-auto flex items-center justify-center lg:justify-end py-4 lg:py-10 px-4 lg:pl-10 lg:pr-0"
+        className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[50vh] xl:h-[55vh] relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-32 lg:my-auto flex items-center pt-8 lg:pt-0 px-4 lg:px-0"
       >
         <img
           src="/images/Chettinad.png"
           alt="Chettinad Bites Food Court"
-          className="w-full h-auto max-h-full object-contain object-center lg:object-right"
+          className="w-full h-full object-cover rounded-xl"
           style={{
-            maskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 100%)',
-            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 100%)',
+            maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%)',
             WebkitMaskComposite: 'source-in',
             maskComposite: 'intersect'
           }}

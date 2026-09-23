@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const FromOurHome = () => {
   return (
-    <div className="w-full min-h-screen lg:h-screen flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-transparent relative p-6 sm:p-10 lg:p-0">
+    <div className="w-full h-auto lg:h-screen flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-transparent relative p-6 sm:p-10 lg:p-0">
       
       {/* Left Column: Image */}
       <motion.div 
@@ -11,12 +11,12 @@ const FromOurHome = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full lg:w-[50%] h-[50vh] lg:h-full flex items-end justify-center relative"
+        className="w-full lg:w-[50%] h-auto lg:h-full flex items-end justify-center relative pt-8 lg:pt-0"
       >
         <img 
           src="/images/Alagappa.png" 
           alt="Alagappa" 
-          className="w-auto h-[70%] lg:h-[65%] object-contain object-bottom"
+          className="w-auto h-[35vh] sm:h-[40vh] lg:h-[65%] object-contain object-bottom"
         />
       </motion.div>
 
@@ -100,6 +100,13 @@ const FromOurHome = () => {
             </div>
             <p className="text-[#4a4a4a] text-[10px] sm:text-xs mt-1 font-serif font-semibold">
               Operating partners: WeTreat INC. & Bombay Bytes Co.
+            </p>
+          </div>
+
+          {/* Credits */}
+          <div className="mt-8 mb-2 w-full flex items-center justify-center">
+            <p className="text-xs sm:text-sm text-[#3a2d21] font-serif font-medium tracking-wider uppercase opacity-80 hover:opacity-100 transition-opacity duration-300">
+              Designed and developed by <a href="https://amigowebster.com/" target="_blank" rel="noopener noreferrer" className="text-[#8c3a21] hover:text-[#782312] font-bold hover:underline underline-offset-4 decoration-[1px] transition-all duration-300">amigowebster</a>
             </p>
           </div>
 
