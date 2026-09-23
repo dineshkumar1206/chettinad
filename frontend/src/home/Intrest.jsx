@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Intrest = () => {
   return (
-    <div className="w-full min-h-screen relative flex items-center justify-center pt-8 pb-12 lg:py-16 overflow-hidden">
+    <div className="w-full h-auto lg:min-h-screen relative flex items-center justify-center py-8 lg:py-16 overflow-hidden">
       <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 h-full relative z-10 text-center">
         
         <motion.div
@@ -13,7 +13,7 @@ const Intrest = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col items-center"
         >
-          <div className="text-sm sm:text-base md:text-xl lg:text-[22px] text-[#2a3822] font-serif mb-2 lg:mb-4">
+          <div className="text-sm sm:text-base md:text-xl lg:text-[22px] text-[#2a3822] font-serif mb-2 lg:mb-4 mt-2 lg:mt-0">
             So... shall we see what else is on the table?
           </div>
 
@@ -21,14 +21,14 @@ const Intrest = () => {
             ✽
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] font-serif text-[#2a3822] font-bold leading-[1.15] mb-8 lg:mb-12 tracking-tight uppercase">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] font-serif text-[#2a3822] font-bold leading-[1.15] mb-2 lg:mb-12 tracking-tight uppercase">
             This is where<br />
             Chettinad gets interesting.
           </h2>
         </motion.div>
 
         <motion.div
-          className="w-full flex justify-center mb-10 lg:mb-16"
+          className="w-full flex justify-center mb-4 lg:mb-16"
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: false, amount: 0.3 }}

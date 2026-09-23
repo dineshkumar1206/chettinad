@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const NonVeg = () => {
   return (
-    <div className="w-full min-h-screen relative flex items-center justify-center py-10 lg:py-16 overflow-hidden">
+    <div className="w-full h-auto lg:min-h-screen relative flex items-center justify-center py-6 lg:py-16 overflow-hidden">
       <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full relative z-10 text-center">
 
         <motion.div

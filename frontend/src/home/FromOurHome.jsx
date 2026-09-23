@@ -67,10 +67,28 @@ const FromOurHome = () => {
 
           {/* Logos */}
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mb-6 w-full">
-            <img src="/images/idlish-logo.png" alt="iDlish" className="h-10 sm:h-12 object-contain" />
-            <img src="/images/2-states.png" alt="2 States" className="h-12 sm:h-16 object-contain" />
-            <img src="/images/chettinad-logo.png" alt="Chettinad Bites" className="h-12 sm:h-16 object-contain" />
-            <img src="/images/naanstop-logo.png" alt="Naanstop Kitchen" className="h-16 sm:h-20 object-contain" />
+            <img 
+              src="/images/idlish-logo.png" 
+              alt="iDlish" 
+              className="h-10 sm:h-12 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
+              onClick={() => window.open('https://idlish.shop/', '_blank')}
+            />
+            <img 
+              src="/images/2-states.png" 
+              alt="2 States" 
+              className="h-12 sm:h-16 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
+              onClick={() => window.open('https://www.2states.co.in/', '_blank')}
+            />
+            <img 
+              src="/images/idaily-logo.webp" 
+              alt="Chettinad Bites" 
+              className="h-12 sm:h-16 object-contain hover:scale-110 transition-transform duration-300"
+            />
+            <img 
+              src="/images/naanstop-logo.png" 
+              alt="Naanstop Kitchen" 
+              className="h-16 sm:h-20 object-contain hover:scale-110 transition-transform duration-300"
+            />
           </div>
 
           {/* Footer Text */}

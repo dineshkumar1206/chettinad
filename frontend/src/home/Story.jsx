@@ -54,6 +54,17 @@ const Story = () => {
             IT CHETTINAD?
           </h2>
 
+          {/* Mobile image version if needed */}
+          <motion.img
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            src="/images/Image5_2.png"
+            alt="Chettinad Story Person"
+            className="block lg:hidden w-full max-w-[200px] mx-auto my-4 object-contain"
+          />
+
           <div className="flex items-center justify-center w-full my-2">
             <div className="h-[2px] bg-[#2a3822] flex-grow max-w-[60px]"></div>
             <div className="text-[#782312] text-xl mx-4">
@@ -85,7 +96,7 @@ const Story = () => {
           {/* Two column layout for the bottom text */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-6 md:gap-10 text-left w-full mt-3">
             
-            <div className="flex-1 flex flex-col max-w-sm ml-16 md:ml-24 lg:ml-32">
+            <div className="flex-1 flex flex-col max-w-sm mx-auto text-center md:text-left px-4 md:px-0 md:mx-0 md:ml-24 lg:ml-32">
               <h3 className="font-bold text-[#1e2917] text-lg sm:text-xl mb-2 font-serif">
                 Chettinad's flavours didn't grow in isolation.
               </h3>
@@ -99,13 +110,13 @@ const Story = () => {
             <div className="hidden md:block w-[1px] h-20 bg-[#a89b8c]"></div>
             <div className="block md:hidden h-[1px] w-full bg-[#a89b8c] my-2"></div>
 
-            <div className="flex-1 flex items-center gap-4 max-w-sm">
+            <div className="flex-1 flex items-center gap-4 max-w-sm ml-10 md:ml-0 text-left">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#782312" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="2" y1="12" x2="22" y2="12"></line>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
-              <h3 className="font-bold text-[#1e2917] text-base sm:text-lg uppercase tracking-wider font-serif">
+              <h3 className="font-bold text-[#1e2917] text-sm sm:text-lg uppercase tracking-wider font-serif">
                 THE WORLD TRAVELLED.<br />
                 THE FLAVOURS CAME HOME.
               </h3>
@@ -113,20 +124,18 @@ const Story = () => {
 
           </div>
 
-
+          {/* Mobile image version for leaves (cm-5-2.webp) at the bottom */}
+          <motion.img
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            src="/images/cm-5-2.webp"
+            alt="Chettinad Story Elements Mobile"
+            className="block lg:hidden w-[60%] max-w-[200px] mx-auto mt-8 mb-4 object-contain"
+          />
 
         </motion.div>
-        
-        {/* Mobile image version if needed */}
-        <motion.img
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          src="/images/Image5_1.png"
-          alt="Chettinad Story"
-          className="block lg:hidden w-full max-w-[250px] mx-auto mt-10 object-contain"
-        />
 
       </div>
     </div>

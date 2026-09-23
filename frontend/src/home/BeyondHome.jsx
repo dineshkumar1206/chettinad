@@ -34,8 +34,8 @@ const BeyondHome = () => {
           </p>
 
           {/* Icons Image */}
-          <div className="flex justify-center w-full mb-4">
-            <img src="/images/beyond-1.webp" alt="Chettinad Bites Features" className="w-full max-w-sm h-auto object-contain" />
+          <div className="flex justify-center w-full mb-4 mt-2">
+            <img src="/images/beyond-1.webp" alt="Chettinad Bites Features" className="w-[70%] md:w-full max-w-[220px] md:max-w-sm h-auto object-contain" />
           </div>
 
           <p className="text-sm sm:text-base text-[#1e2917] font-serif leading-snug mb-4 px-4">

@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const StoryBegins = () => {
   return (
-    <div className="w-full h-screen relative flex items-center justify-center py-4 lg:py-8 overflow-hidden bg-transparent">
-      <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row items-stretch justify-between px-4 sm:px-8 md:px-12 h-full relative z-10">
+    <div className="w-full h-auto lg:h-screen relative flex items-center justify-center py-8 lg:py-8 overflow-hidden bg-transparent">
+      <div className="w-full max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row items-stretch justify-between px-4 sm:px-8 md:px-12 h-full relative z-10">
         
         {/* Left Column: Text */}
         <motion.div
@@ -40,11 +40,11 @@ const StoryBegins = () => {
               Shrilakshmi and Suvarnalakshmi would ask us,
             </p>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-[#782312] font-medium leading-tight mb-4 px-4" style={{fontFamily: "'Caveat', 'Just Another Hand', 'Comic Sans MS', cursive"}}>
-              "Why do we get all these wonderful<br />
-              dishes here... but not in Mumbai<br />
-              and other cities?"
-            </p>
+            <img 
+              src="/images/story-1.webp" 
+              alt="Story quote" 
+              className="w-full max-w-md mx-auto mb-4 object-contain" 
+            />
 
             <p className="text-sm sm:text-base text-[#1e2917] font-serif leading-snug mb-4">
               It was a simple question.<br />
@@ -79,12 +79,12 @@ const StoryBegins = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full lg:w-[30%] flex items-center justify-center lg:justify-end mt-10 lg:mt-10 relative top-[2%]"
+          className="w-full lg:w-[30%] flex items-center justify-center lg:justify-end mb-6 lg:mb-0 lg:mt-10 relative top-[2%]"
         >
           <img
             src="/images/ShriSuvarna.png"
             alt="Family eating Chettinad food"
-            className="w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-125 -translate-x-8 lg:-translate-x-32 -translate-y-4 lg:-translate-y-12"
+            className="w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-100 lg:scale-125 translate-x-0 lg:-translate-x-32 translate-y-0 lg:-translate-y-12"
             style={{ 
               maskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)',
               WebkitMaskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)' 

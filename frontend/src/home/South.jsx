@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const South = () => {
   return (
-    <div className="w-full min-h-[100svh] lg:h-screen relative flex items-center py-12 lg:py-0 overflow-hidden bg-transparent">
-      <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full gap-6 lg:gap-0">
+    <div className="w-full h-auto lg:h-screen lg:min-h-[100svh] relative flex items-center py-8 lg:py-0 overflow-hidden bg-transparent">
+      <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full gap-8 lg:gap-0 -translate-y-10 lg:translate-y-0">
 
         {/* Left side: Person image */}
         <motion.div
@@ -17,13 +17,13 @@ const South = () => {
           <img
             src="/images/second-component.png"
             alt="Chettinad Person Thinking"
-            className="w-[45%] sm:w-[35%] md:w-[30%] lg:w-auto lg:h-[75%] max-h-[35vh] lg:max-h-none drop-shadow-xl object-contain object-bottom lg:object-left-bottom translate-y-4 lg:translate-y-0"
+            className="w-[65%] sm:w-[50%] md:w-[40%] lg:w-auto lg:h-[75%] max-h-[35vh] lg:max-h-none drop-shadow-xl object-contain object-bottom lg:object-left-bottom -translate-y-4 lg:translate-y-0"
           />
         </motion.div>
 
         {/* Right side: Content */}
         <motion.div
-          className="w-full lg:w-8/12 lg:ml-auto flex flex-col items-center text-center z-10 relative mt-4 lg:mt-0"
+          className="w-full lg:w-8/12 lg:ml-auto flex flex-col items-center text-center z-10 relative mt-12 lg:mt-0"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
