@@ -34,9 +34,7 @@ const Speciality = () => {
 
             {/* Item 1 */}
             <div className="flex items-start gap-4">
-              <div className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#8c3a21] flex-shrink-0 flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></svg>
-              </div>
+              <img src="/images/icon-1.png" alt="Authentic Regional Flavours" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">AUTHENTIC REGIONAL FLAVOURS</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">Rooted in the food and traditions<br className="hidden sm:block" /> of Chettinad.</p>
@@ -45,9 +43,7 @@ const Speciality = () => {
 
             {/* Item 2 */}
             <div className="flex items-start gap-4">
-              <div className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#8c3a21] flex-shrink-0 flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 18h18" /><path d="M4 18a8 8 0 0 1 16 0" /><path d="M12 7V5" /><path d="M10 5h4" /></svg>
-              </div>
+              <img src="/images/icon-2.png" alt="Focused Menu" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">FOCUSED MENU</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">A curated range designed for<br className="hidden sm:block" /> efficient operations.</p>
@@ -56,9 +52,7 @@ const Speciality = () => {
 
             {/* Item 3 */}
             <div className="flex items-start gap-4">
-              <div className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#8c3a21] flex-shrink-0 flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v2" /><path d="M8 3v1" /><path d="M16 3v1" /><path d="M2 13a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9H2Z" /><path d="M4 14v2a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-2" /></svg>
-              </div>
+              <img src="/images/icon-3.png" alt="Live & Batch Cooked Fresh" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">LIVE & BATCH COOKED FRESH</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">Food prepared live and in fresh<br className="hidden sm:block" /> batches through the day.</p>
@@ -67,9 +61,7 @@ const Speciality = () => {
 
             {/* Item 4 */}
             <div className="flex items-start gap-4">
-              <div className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#8c3a21] flex-shrink-0 flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 10l-4 4" /><path d="M18 6l-4 4" /><path d="M21 3a2.83 2.83 0 0 0-4 0l-7.5 7.5a2.83 2.83 0 0 0 0 4l1 1a2.83 2.83 0 0 0 4 0l7.5-7.5a2.83 2.83 0 0 0 0-4Z" /><path d="M4 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /><path d="M7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /><path d="M2 22l2-2" /></svg>
-              </div>
+              <img src="/images/icon-4.png" alt="Veg & Non-Veg" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">VEG & NON-VEG</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">A regional experience with<br className="hidden sm:block" /> something for everyone.</p>
@@ -78,9 +70,7 @@ const Speciality = () => {
 
             {/* Item 5 */}
             <div className="flex items-start gap-4">
-              <div className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#8c3a21] flex-shrink-0 flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-              </div>
+              <img src="/images/icon-5.png" alt="Designed for Everyday Dining" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">DESIGNED FOR EVERYDAY DINING</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">A speciality concept that fits seamlessly<br className="hidden sm:block" /> into corporate cafeterias and food courts.</p>
