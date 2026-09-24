@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full gap-8 lg:gap-0">
         {/* Left side: Person image */}
         <motion.div 
-          className="w-full lg:w-5/12 flex justify-center lg:justify-start items-end lg:items-center relative z-10 lg:self-end h-auto lg:h-full pb-4 lg:pb-0"
+          className="w-full lg:w-5/12 flex justify-center lg:justify-start items-end lg:items-end relative z-10 lg:self-end h-auto lg:h-full pb-4 lg:pb-0"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
@@ -16,7 +16,7 @@ const Hero = () => {
           <img 
             src="/images/first-component.webp" 
             alt="Chettinad Person" 
-            className="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[75%] lg:max-w-none h-auto drop-shadow-2xl object-contain object-bottom -translate-y-16 sm:-translate-y-8 lg:translate-y-20 xl:translate-y-24 translate-x-2 lg:translate-x-12 xl:translate-x-16" 
+            className="w-[55%] sm:w-[45%] md:w-[40%] lg:w-[60%] lg:max-w-none h-auto drop-shadow-2xl object-contain object-bottom -translate-y-8 sm:-translate-y-8 lg:translate-y-0 translate-x-2 lg:translate-x-20 xl:translate-x-28" 
           />
         </motion.div>
 
@@ -32,7 +32,7 @@ const Hero = () => {
           <motion.img 
             src="/images/chettinad-logo.png" 
             alt="Chettinad Bites" 
-            className="w-24 sm:w-28 md:w-32 lg:w-40 mb-4 lg:mb-6" 
+            className="w-24 sm:w-28 md:w-32 lg:w-28 mb-4 lg:mb-6" 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="hidden sm:block w-[1px] h-12 bg-[#8a7060]/40"></div>
             
             <div className="text-xs sm:text-sm lg:text-[16px] not-italic leading-tight text-center sm:text-left text-[#5a4036] font-serif font-semibold relative top-2">
-              And yes,<br />we have idli<br />and dosa too. 
+              Hi I am Alagappa
             </div>
           </div>
 

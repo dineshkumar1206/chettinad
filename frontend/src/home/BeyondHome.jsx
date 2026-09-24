@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const BeyondHome = () => {
   return (
-    <div className="w-full h-auto lg:h-screen flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
+    <div className="w-full h-auto py-4 lg:py-6 flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
 
       {/* Left Column: Content */}
       <motion.div
@@ -35,7 +35,7 @@ const BeyondHome = () => {
 
           {/* Icons Image */}
           <div className="flex justify-center w-full mb-4 mt-2">
-            <img src="/images/beyond-1.webp" alt="Chettinad Bites Features" className="w-[70%] md:w-full max-w-[220px] md:max-w-sm h-auto object-contain" />
+            <img src="/images/beyond-1.webp" alt="Chettinad Bites Features" className="w-[70%] md:w-full max-w-[220px] md:max-w-[280px] h-auto object-contain" />
           </div>
 
           <p className="text-sm sm:text-base text-[#1e2917] font-serif leading-snug mb-4 px-4">
@@ -69,7 +69,7 @@ const BeyondHome = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[50vh] xl:h-[55vh] relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-32 lg:my-auto flex items-center pt-8 lg:pt-0 px-4 lg:px-0"
+        className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[50vh] xl:h-[55vh] relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-32 lg:-translate-x-8 xl:-translate-x-12 lg:my-auto flex items-center pt-8 lg:pt-0 px-4 lg:px-0"
       >
         <img
           src="/images/Chettinad.png"

@@ -8,7 +8,7 @@ const South = () => {
 
         {/* Left side: Person image */}
         <motion.div
-          className="w-full lg:w-4/12 flex justify-center lg:justify-start items-end z-10 h-auto lg:h-full lg:absolute lg:left-8 xl:left-16 lg:bottom-0 xl:bottom-0"
+          className="w-full lg:w-4/12 flex justify-center lg:justify-start items-end z-10 h-auto lg:h-full lg:absolute lg:left-16 lg:translate-x-12 2xl:translate-x-0 lg:bottom-0 xl:bottom-0"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
@@ -23,7 +23,7 @@ const South = () => {
 
         {/* Right side: Content */}
         <motion.div
-          className="w-full lg:w-8/12 lg:ml-auto flex flex-col items-center text-center z-10 relative mt-12 lg:mt-0"
+          className="w-full lg:w-8/12 lg:ml-auto flex flex-col items-center text-center z-10 relative mt-12 lg:mt-0 lg:-translate-x-4 2xl:translate-x-0"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}

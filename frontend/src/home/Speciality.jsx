@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Speciality = () => {
   return (
-    <div className="w-full min-h-screen lg:h-screen flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
+    <div className="w-full h-auto py-4 lg:py-6 flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
 
       {/* Left Column: Content */}
       <motion.div
