@@ -38,7 +38,7 @@ const Story = () => {
         className="hidden lg:block absolute lg:right-24 xl:right-32 top-[35%] w-[18%] max-w-[280px] object-contain z-10"
       />
 
-      <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 relative z-10 text-center">
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-12 sm:px-16 md:px-20 lg:px-16 relative z-10 text-center">
         
         <motion.div
           initial={{ opacity: 0, y: 40 }}

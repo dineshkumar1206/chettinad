@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const StoryBegins = () => {
   return (
     <div className="w-full h-auto lg:min-h-[100svh] relative flex items-center justify-center py-12 lg:py-16 overflow-hidden bg-transparent">
-      <div className="w-full max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row items-stretch justify-between px-4 sm:px-8 md:px-12 h-full relative z-10">
+      <div className="w-full max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row items-stretch justify-between px-12 sm:px-16 md:px-20 lg:px-12 h-full relative z-10">
         
         {/* Left Column: Text */}
         <motion.div
@@ -84,7 +84,7 @@ const StoryBegins = () => {
           <img
             src="/images/ShriSuvarna.png"
             alt="Family eating Chettinad food"
-            className="w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-100 lg:scale-95 translate-x-0 lg:-translate-x-32 translate-y-0 lg:-translate-y-12"
+            className="w-[90%] mx-auto lg:w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-100 lg:scale-95 translate-x-0 lg:-translate-x-32 translate-y-0 lg:-translate-y-12"
             style={{ 
               maskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)',
               WebkitMaskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)' 

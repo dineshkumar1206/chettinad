@@ -11,11 +11,11 @@ const BeyondHome = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8 }}
-        className="w-full lg:w-[45%] xl:w-[40%] flex flex-col items-center justify-center p-6 sm:p-10 lg:p-12 xl:p-16 h-auto lg:h-full order-2 lg:order-1"
+        className="w-full lg:w-[45%] xl:w-[40%] flex flex-col items-center justify-center px-12 py-6 sm:px-16 sm:py-10 lg:p-12 xl:p-16 h-auto lg:h-full order-2 lg:order-1"
       >
         <div className="max-w-md mx-auto lg:ml-16 xl:ml-24 flex flex-col items-center text-center w-full">
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
             TAKING<br />
             CHETTINAD<br />
             BEYOND HOME.

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const NonVeg = () => {
   return (
     <div className="w-full h-auto lg:min-h-screen relative flex items-center justify-center py-6 lg:py-16 overflow-hidden">
-      <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full relative z-10 text-center">
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-between px-12 sm:px-16 md:px-20 lg:px-16 h-full relative z-10 text-center">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -42,14 +42,22 @@ const NonVeg = () => {
         >
           <div className="relative w-full max-w-6xl">
 
+            {/* Desktop/Tablet Image */}
             <img
               src="/images/cm-4.webp"
               alt="Chettinad Non-Vegetarian Dishes"
-              className="w-[95%] lg:w-[90%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10 transform translate-x-2 lg:translate-x-8"
+              className="hidden sm:block w-[95%] lg:w-[90%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10 transform translate-x-2 lg:translate-x-8"
               style={{
                 WebkitMaskImage: 'linear-gradient(to right, black 96%, transparent 100%)',
                 maskImage: 'linear-gradient(to right, black 96%, transparent 100%)'
               }}
+            />
+            
+            {/* Mobile Image */}
+            <img
+              src="/images/mobile-cm-3.webp"
+              alt="Chettinad Non-Vegetarian Dishes Mobile"
+              className="block sm:hidden w-[95%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10"
             />
           </div>
         </motion.div>

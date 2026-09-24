@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const FromOurHome = () => {
   return (
-    <div className="w-full h-auto lg:h-screen flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-transparent relative p-6 sm:p-10 lg:p-0">
+    <div className="w-full h-auto lg:min-h-screen flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent relative p-6 sm:p-10 lg:p-0 lg:pt-12">
       
       {/* Left Column: Image */}
       <motion.div 
@@ -11,12 +11,12 @@ const FromOurHome = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full lg:w-[50%] h-auto lg:h-full flex items-end justify-center relative pt-8 lg:pt-0"
+        className="w-full lg:w-[50%] h-auto lg:h-auto flex items-end justify-center relative pt-8 lg:pt-0 lg:absolute lg:bottom-0 lg:left-0"
       >
         <img 
           src="/images/Alagappa.png" 
           alt="Alagappa" 
-          className="w-auto h-[35vh] sm:h-[40vh] lg:h-[65%] object-contain object-bottom"
+          className="w-auto h-[35vh] sm:h-[40vh] lg:h-[65vh] object-contain object-bottom"
         />
       </motion.div>
 
@@ -26,11 +26,11 @@ const FromOurHome = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="w-full lg:w-[50%] flex flex-col items-center justify-center pt-10 pb-6 lg:py-0 h-full z-10"
+        className="w-full lg:w-[50%] flex flex-col items-center justify-center pt-10 pb-6 lg:py-0 h-full z-10 lg:ml-auto"
       >
         <div className="max-w-xl flex flex-col items-center text-center w-full px-4 sm:px-8 lg:-translate-x-24 xl:-translate-x-40">
           
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-serif text-[#0e2417] font-semibold leading-[1.1] tracking-tight uppercase mb-3 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-serif text-[#0e2417] font-semibold leading-[1.1] tracking-tight uppercase mb-3 text-center">
             FROM OUR HOME.<br />
             TO YOUR TABLE.
           </h2>
@@ -47,16 +47,14 @@ const FromOurHome = () => {
             BRING CHETTINAD TO YOUR SPACE.
           </h3>
 
-          <button className="bg-[#8c3a21] hover:bg-[#7a311c] transition-colors duration-300 text-white font-serif uppercase tracking-wider text-base sm:text-lg py-2.5 px-8 rounded-full flex items-center justify-center gap-2 mb-8 shadow-md">
+          <button 
+            onClick={() => window.open('https://wa.me/919833381022', '_blank')}
+            className="bg-[#8c3a21] cursor-pointer hover:bg-[#7a311c] transition-colors duration-300 text-white font-serif uppercase tracking-wider text-base sm:text-lg py-2.5 px-8 rounded-full flex items-center justify-center gap-2 mb-8 shadow-md"
+          >
             LET'S TALK <span className="text-2xl leading-none">&rsaquo;</span>
           </button>
 
-          {/* Divider: Enterprise Dining & Catering */}
-          <div className="w-full flex items-center justify-center gap-4 mb-6">
-            <div className="h-[1px] bg-gray-400 flex-1 max-w-[80px]"></div>
-            <p className="text-[#2b2b2b] font-serif text-base sm:text-lg lg:text-xl whitespace-nowrap">Enterprise Dining & Catering</p>
-            <div className="h-[1px] bg-gray-400 flex-1 max-w-[80px]"></div>
-          </div>
+
 
           {/* Divider: House of Brands */}
           <div className="w-full flex items-center justify-center gap-4 mb-5">
@@ -66,7 +64,12 @@ const FromOurHome = () => {
           </div>
 
           {/* Logos */}
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mb-6 w-full">
+          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 sm:gap-6 lg:gap-5 mb-6 w-full">
+            <img 
+              src="/images/chettinad-logo.png" 
+              alt="Chettinad Bites" 
+              className="h-12 sm:h-16 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
+            />
             <img 
               src="/images/idlish-logo.png" 
               alt="iDlish" 

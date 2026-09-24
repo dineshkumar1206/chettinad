@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const South = () => {
   return (
-    <div className="w-full h-auto lg:h-screen lg:min-h-[100svh] relative flex items-center py-8 lg:py-0 overflow-hidden bg-transparent">
-      <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full gap-8 lg:gap-0 -translate-y-10 lg:translate-y-0">
+    <div className="w-full h-auto lg:h-screen lg:min-h-[100svh] relative flex items-center pt-12 pb-0 lg:py-0 overflow-hidden bg-transparent">
+      <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-12 sm:px-16 md:px-20 lg:px-16 h-full gap-8 lg:gap-0">
 
         {/* Left side: Person image */}
         <motion.div
@@ -17,7 +17,7 @@ const South = () => {
           <img
             src="/images/second-component.png"
             alt="Chettinad Person Thinking"
-            className="w-[65%] sm:w-[50%] md:w-[40%] lg:w-auto lg:h-[75%] max-h-[35vh] lg:max-h-none drop-shadow-xl object-contain object-bottom lg:object-left-bottom -translate-y-4 lg:translate-y-0"
+            className="w-[65%] sm:w-[50%] md:w-[40%] lg:w-auto lg:h-[75%] max-h-[35vh] lg:max-h-none drop-shadow-xl object-contain object-bottom lg:object-left-bottom translate-y-0"
           />
         </motion.div>
 
@@ -48,11 +48,22 @@ const South = () => {
             ✽
           </div>
 
-          {/* Center Image (Food Items) */}
+          {/* Center Image (Food Items) - Desktop/Tablet */}
           <motion.img
             src="/images/cm-2.webp"
             alt="South Indian Food Items"
-            className="w-[95%] sm:w-[85%] lg:w-full max-w-2xl mx-auto drop-shadow-md my-1 lg:my-2 relative z-10"
+            className="hidden sm:block w-[85%] lg:w-full max-w-2xl mx-auto drop-shadow-md my-1 lg:my-2 relative z-10"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          />
+
+          {/* Center Image (Food Items) - Mobile */}
+          <motion.img
+            src="/images/mobile-cm-1.webp"
+            alt="South Indian Food Items Mobile"
+            className="block sm:hidden w-[95%] mx-auto drop-shadow-md my-2 relative z-10"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false, amount: 0.3 }}
