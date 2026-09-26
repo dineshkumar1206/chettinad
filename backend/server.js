@@ -48,8 +48,8 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// Contact Form Endpoint
-app.post('/api/contact', async (req, res) => {
+// Contact Form Endpoint (Handling both local and subfolder routes)
+app.post(['/api/contact', '/chettinad/api/contact'], async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
 
