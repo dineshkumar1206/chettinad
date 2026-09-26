@@ -35,18 +35,36 @@ const Intrest = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           {/* Desktop/Tablet Image */}
-          <imgloading="lazy" 
+          <img
+loading="lazy" 
             src="/images/cm-3.webp"
             alt="Chettinad Interesting Dishes"
             className="hidden sm:block w-full lg:w-[80%] lg:max-w-4xl xl:max-w-5xl h-auto drop-shadow-xl object-contain mx-auto"
           />
           
-          {/* Mobile Image */}
-          <imgloading="lazy" 
-            src="/images/mobile-cm-2.webp"
-            alt="Chettinad Interesting Dishes Mobile"
-            className="block sm:hidden w-[85%] h-auto drop-shadow-xl object-contain mx-auto"
-          />
+                    {/* Center Images (Food Items) - Mobile */}
+          <div className="flex sm:hidden flex-col items-center justify-center -space-y-4 w-[95%] mx-auto my-2 relative z-10">
+            <motion.img
+              loading="lazy" 
+              src="/images/second-food-1.webp"
+              alt="Chettinad Food 1"
+              className="w-[90%] h-auto drop-shadow-xl object-contain mx-auto"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            />
+            <motion.img
+              loading="lazy" 
+              src="/images/second-food-2.webp"
+              alt="Chettinad Food 2"
+              className="w-[65%] h-auto drop-shadow-xl object-contain mx-auto"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            />
+          </div>
         </motion.div>
 
 
@@ -57,3 +75,5 @@ const Intrest = () => {
 };
 
 export default Intrest;
+
+

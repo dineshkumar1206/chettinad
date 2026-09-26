@@ -61,17 +61,29 @@ loading="lazy"
             transition={{ duration: 0.8, delay: 0.3 }}
           />
 
-          {/* Center Image (Food Items) - Mobile */}
-          <motion.img
-loading="lazy" 
-            src="/images/mobile-cm-1.webp"
-            alt="South Indian Food Items Mobile"
-            className="block sm:hidden w-[95%] mx-auto drop-shadow-md my-2 relative z-10"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.3 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          />
+          {/* Center Images (Food Items) - Mobile */}
+          <div className="flex sm:hidden flex-col items-center justify-center -space-y-4 w-[95%] mx-auto my-2 relative z-10">
+            <motion.img
+              loading="lazy" 
+              src="/images/food-1.webp"
+              alt="South Indian Food 1"
+              className="w-full h-auto drop-shadow-md"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            />
+            <motion.img
+              loading="lazy" 
+              src="/images/food-2.webp"
+              alt="South Indian Food 2"
+              className="w-full h-auto drop-shadow-md"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            />
+          </div>
 
           <h3 className="text-base sm:text-lg lg:text-[24px] font-serif text-[#2a3822] font-bold mt-1">
             But that's only one little corner of a very big table.
@@ -84,3 +96,4 @@ loading="lazy"
 };
 
 export default South;
+

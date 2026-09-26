@@ -43,8 +43,7 @@ const NonVeg = () => {
           <div className="relative w-full max-w-6xl">
 
             {/* Desktop/Tablet Image */}
-            <img
-loading="lazy" 
+            <img loading="lazy" 
               src="/images/cm-4.webp"
               alt="Chettinad Non-Vegetarian Dishes"
               className="hidden sm:block w-[95%] lg:w-[80%] mx-auto h-auto max-h-[40vh] drop-shadow-2xl object-contain relative z-10 transform translate-x-2 lg:translate-x-8"
@@ -54,13 +53,29 @@ loading="lazy"
               }}
             />
             
-            {/* Mobile Image */}
-            <img
-loading="lazy" 
-              src="/images/mobile-cm-3.webp"
-              alt="Chettinad Non-Vegetarian Dishes Mobile"
-              className="block sm:hidden w-[95%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10"
-            />
+            {/* Center Images (Food Items) - Mobile */}
+            <div className="flex sm:hidden flex-col items-center justify-center -space-y-4 w-[95%] mx-auto my-2 relative z-10">
+              <motion.img
+                loading="lazy" 
+                src="/images/third-food-1.webp"
+                alt="Chettinad Non-Vegetarian Dishes 1"
+                className="w-[90%] h-auto drop-shadow-2xl object-contain mx-auto"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              />
+              <motion.img
+                loading="lazy" 
+                src="/images/third-food-2.webp"
+                alt="Chettinad Non-Vegetarian Dishes 2"
+                className="w-[90%] h-auto drop-shadow-2xl object-contain mx-auto"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              />
+            </div>
           </div>
         </motion.div>
 
@@ -94,3 +109,4 @@ loading="lazy"
 };
 
 export default NonVeg;
+

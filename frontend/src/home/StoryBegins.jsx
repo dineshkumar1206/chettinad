@@ -47,8 +47,8 @@ const StoryBegins = () => {
             </p>
 
             <p className="text-sm sm:text-base text-[#1e2917] font-serif leading-snug mb-4">
-              Every time we went back, our daughters<br className="hidden sm:block" />
-              Shrilakshmi and Suvarnalakshmi would ask us,
+              Every time we went back, our daughters <br className="hidden sm:block" />
+              <b>Shri & Suvarna</b> would ask us,
             </p>
 
             <img loading="lazy" 
