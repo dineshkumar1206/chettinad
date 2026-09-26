@@ -40,7 +40,7 @@ const StoryBegins = () => {
               Shrilakshmi and Suvarnalakshmi would ask us,
             </p>
 
-            <img 
+            <img loading="lazy" 
               src="/images/story-1.webp" 
               alt="Story quote" 
               className="w-full max-w-md mx-auto mb-4 object-contain" 
@@ -81,7 +81,7 @@ const StoryBegins = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full lg:w-[30%] flex items-center justify-center lg:justify-end mb-6 lg:mb-0 lg:mt-10 relative top-[2%]"
         >
-          <img
+          <imgloading="lazy" 
             src="/images/ShriSuvarna.png"
             alt="Family eating Chettinad food"
             className="w-[90%] mx-auto lg:w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-100 lg:scale-95 translate-x-0 lg:-translate-x-32 translate-y-0 lg:-translate-y-12"

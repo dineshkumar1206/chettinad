@@ -43,7 +43,7 @@ const NonVeg = () => {
           <div className="relative w-full max-w-6xl">
 
             {/* Desktop/Tablet Image */}
-            <img
+            <imgloading="lazy" 
               src="/images/cm-4.webp"
               alt="Chettinad Non-Vegetarian Dishes"
               className="hidden sm:block w-[95%] lg:w-[90%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10 transform translate-x-2 lg:translate-x-8"
@@ -54,7 +54,7 @@ const NonVeg = () => {
             />
             
             {/* Mobile Image */}
-            <img
+            <imgloading="lazy" 
               src="/images/mobile-cm-3.webp"
               alt="Chettinad Non-Vegetarian Dishes Mobile"
               className="block sm:hidden w-[95%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10"

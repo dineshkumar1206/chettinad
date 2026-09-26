@@ -32,7 +32,7 @@ const Hero = () => {
           <motion.img 
             src="/images/chettinad-logo.png" 
             alt="Chettinad Bites" 
-            className="w-24 sm:w-28 md:w-32 lg:w-28 mb-4 lg:mb-6" 
+            className="w-24 sm:w-28 md:w-32 lg:w-28 mt-10 sm:mt-0 mb-4 lg:mb-6" 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -59,8 +59,8 @@ const Hero = () => {
             
             <div className="hidden sm:block w-[1px] h-12 bg-[#8a7060]/40"></div>
             
-            <div className="text-xs sm:text-sm lg:text-[16px] not-italic leading-tight text-center sm:text-left text-[#5a4036] font-serif font-semibold relative top-2">
-              Hi I am Alagappa
+            <div className="flex flex-col items-center justify-center pt-1 lg:pt-2">
+              <img src="/images/hero-2.webp" alt="Hi I am Alagappa" className="h-12 sm:h-14 lg:h-16 object-contain" />
             </div>
           </div>
 

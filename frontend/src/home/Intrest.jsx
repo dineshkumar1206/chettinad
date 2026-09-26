@@ -35,14 +35,14 @@ const Intrest = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           {/* Desktop/Tablet Image */}
-          <img
+          <imgloading="lazy" 
             src="/images/cm-3.webp"
             alt="Chettinad Interesting Dishes"
             className="hidden sm:block w-full lg:w-[80%] lg:max-w-4xl xl:max-w-5xl h-auto drop-shadow-xl object-contain mx-auto"
           />
           
           {/* Mobile Image */}
-          <img
+          <imgloading="lazy" 
             src="/images/mobile-cm-2.webp"
             alt="Chettinad Interesting Dishes Mobile"
             className="block sm:hidden w-[85%] h-auto drop-shadow-xl object-contain mx-auto"

@@ -13,7 +13,7 @@ const FromOurHome = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="w-full lg:w-[50%] h-auto lg:h-auto flex items-end justify-center relative pt-8 lg:pt-0 lg:absolute lg:bottom-0 lg:left-0"
       >
-        <img 
+        <img loading="lazy" 
           src="/images/Alagappa.png" 
           alt="Alagappa" 
           className="w-auto h-[35vh] sm:h-[40vh] lg:h-[65vh] object-contain object-bottom"
@@ -65,29 +65,29 @@ const FromOurHome = () => {
 
           {/* Logos */}
           <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 sm:gap-6 lg:gap-5 mb-6 w-full">
-            <img 
+            <img loading="lazy" 
               src="/images/chettinad-logo.png" 
               alt="Chettinad Bites" 
               className="h-12 sm:h-16 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
             />
-            <img 
+            <img loading="lazy" 
               src="/images/idlish-logo.png" 
               alt="iDlish" 
               className="h-10 sm:h-12 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={() => window.open('https://idlish.shop/', '_blank')}
             />
-            <img 
+            <img loading="lazy" 
               src="/images/2-states.png" 
               alt="2 States" 
               className="h-12 sm:h-16 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={() => window.open('https://www.2states.co.in/', '_blank')}
             />
-            <img 
+            <img loading="lazy" 
               src="/images/idaily-logo.webp" 
               alt="Chettinad Bites" 
               className="h-12 sm:h-16 object-contain hover:scale-110 transition-transform duration-300"
             />
-            <img 
+            <img loading="lazy" 
               src="/images/naanstop-logo.png" 
               alt="Naanstop Kitchen" 
               className="h-16 sm:h-20 object-contain hover:scale-110 transition-transform duration-300"

@@ -34,7 +34,7 @@ const Speciality = () => {
 
             {/* Item 1 */}
             <div className="flex items-start gap-4">
-              <img src="/images/icon-1.png" alt="Authentic Regional Flavours" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
+              <img loading="lazy" src="/images/icon-1.png" alt="Authentic Regional Flavours" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">AUTHENTIC REGIONAL FLAVOURS</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">Rooted in the food and traditions<br className="hidden sm:block" /> of Chettinad.</p>
@@ -43,7 +43,7 @@ const Speciality = () => {
 
             {/* Item 2 */}
             <div className="flex items-start gap-4">
-              <img src="/images/icon-2.png" alt="Focused Menu" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
+              <img loading="lazy" src="/images/icon-2.png" alt="Focused Menu" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">FOCUSED MENU</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">A curated range designed for<br className="hidden sm:block" /> efficient operations.</p>
@@ -52,7 +52,7 @@ const Speciality = () => {
 
             {/* Item 3 */}
             <div className="flex items-start gap-4">
-              <img src="/images/icon-3.png" alt="Live & Batch Cooked Fresh" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
+              <img loading="lazy" src="/images/icon-3.png" alt="Live & Batch Cooked Fresh" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">LIVE & BATCH COOKED FRESH</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">Food prepared live and in fresh<br className="hidden sm:block" /> batches through the day.</p>
@@ -61,7 +61,7 @@ const Speciality = () => {
 
             {/* Item 4 */}
             <div className="flex items-start gap-4">
-              <img src="/images/icon-4.png" alt="Veg & Non-Veg" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
+              <img loading="lazy" src="/images/icon-4.png" alt="Veg & Non-Veg" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">VEG & NON-VEG</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">A regional experience with<br className="hidden sm:block" /> something for everyone.</p>
@@ -70,7 +70,7 @@ const Speciality = () => {
 
             {/* Item 5 */}
             <div className="flex items-start gap-4">
-              <img src="/images/icon-5.png" alt="Designed for Everyday Dining" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
+              <img loading="lazy" src="/images/icon-5.png" alt="Designed for Everyday Dining" className="w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] object-contain flex-shrink-0" />
               <div className="flex flex-col pt-1">
                 <h4 className="text-[#1e2917] font-serif font-bold uppercase text-sm sm:text-base mb-1">DESIGNED FOR EVERYDAY DINING</h4>
                 <p className="text-[#1e2917] font-serif text-xs sm:text-sm leading-snug">A speciality concept that fits seamlessly<br className="hidden sm:block" /> into corporate cafeterias and food courts.</p>
@@ -89,7 +89,7 @@ const Speciality = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[75vh] relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-32 lg:my-auto flex items-center"
       >
-        <img
+        <imgloading="lazy" 
           src="/images/Imagefor8.png"
           alt="Chettinad Bites Speciality"
           className="w-full h-full object-cover rounded-xl"

@@ -35,7 +35,7 @@ const BeyondHome = () => {
 
           {/* Icons Image */}
           <div className="flex justify-center w-full mb-4 mt-2">
-            <img src="/images/beyond-1.webp" alt="Chettinad Bites Features" className="w-[70%] md:w-full max-w-[220px] md:max-w-[280px] h-auto object-contain" />
+            <img loading="lazy" src="/images/beyond-1.webp" alt="Chettinad Bites Features" className="w-[70%] md:w-full max-w-[220px] md:max-w-[280px] h-auto object-contain" />
           </div>
 
           <p className="text-sm sm:text-base text-[#1e2917] font-serif leading-snug mb-4 px-4">
@@ -71,7 +71,7 @@ const BeyondHome = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[50vh] xl:h-[55vh] relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-32 lg:-translate-x-8 xl:-translate-x-12 lg:my-auto flex items-center pt-8 lg:pt-0 px-4 lg:px-0"
       >
-        <img
+        <imgloading="lazy" 
           src="/images/Chettinad.png"
           alt="Chettinad Bites Food Court"
           className="w-full h-full object-cover rounded-xl"

@@ -6,7 +6,7 @@ const Story = () => {
     <div className="w-full min-h-screen relative flex items-center justify-center py-12 lg:py-20 overflow-hidden">
       
       {/* Left side image restored */}
-      {/* <motion.img
+      {/* <motion.imgloading="lazy" 
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
@@ -17,7 +17,7 @@ const Story = () => {
       /> */}
 
       {/* Right side image - absolutely positioned */}
-      <motion.img
+      <motion.imgloading="lazy" 
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
@@ -28,7 +28,7 @@ const Story = () => {
       />
 
       {/* Top right side image - absolutely positioned */}
-      <motion.img
+      <motion.imgloading="lazy" 
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
@@ -47,7 +47,7 @@ const Story = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col items-center max-w-4xl mx-auto"
         >
-          <img src="/images/cm-5-1.webp" alt="Now you're probably wondering" className="h-16 sm:h-20 md:h-24 object-contain mb-4" />
+          <img loading="lazy" src="/images/cm-5-1.webp" alt="Now you're probably wondering" className="h-16 sm:h-20 md:h-24 object-contain mb-4" />
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
             BUT WHAT MAKES<br />
@@ -55,7 +55,7 @@ const Story = () => {
           </h2>
 
           {/* Mobile image version if needed */}
-          <motion.img
+          <motion.imgloading="lazy" 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
@@ -114,7 +114,7 @@ const Story = () => {
           </div>
 
           {/* Mobile image version for leaves (cm-5-2.webp) at the bottom */}
-          <motion.img
+          <motion.imgloading="lazy" 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
