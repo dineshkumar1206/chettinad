@@ -69,6 +69,7 @@ const FromOurHome = () => {
               src="/images/chettinad-logo.png" 
               alt="Chettinad Bites" 
               className="h-12 sm:h-16 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
+              onClick={() => window.open('https://chettinad.co.in/', '_blank')}
             />
             <img loading="lazy" 
               src="/images/idlish-logo.png" 
