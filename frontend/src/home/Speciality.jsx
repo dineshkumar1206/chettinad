@@ -13,10 +13,10 @@ const Speciality = () => {
         transition={{ duration: 0.8 }}
         className="w-full lg:w-[45%] xl:w-[45%] flex flex-col justify-center p-4 sm:p-6 lg:p-8 xl:p-10 h-full order-2 lg:order-1"
       >
-        <div className="max-w-lg ml-6 sm:ml-12 lg:ml-32 xl:ml-48 flex flex-col items-start w-full pr-4">
+        <div className="max-w-xl ml-6 sm:ml-12 lg:ml-28 xl:ml-40 flex flex-col items-start w-full pr-4">
 
-          <div className="text-center w-full mb-6 lg:-translate-x-8 xl:-translate-x-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-3">
+          <div className="text-center w-full mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-3 lg:whitespace-nowrap">
               A SPECIALITY.<br />
               NOT JUST ANOTHER COUNTER.
             </h2>
@@ -30,7 +30,7 @@ const Speciality = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 w-full mt-2">
+          <div className="flex flex-col gap-4 w-full mt-2 lg:pl-8 xl:pl-12">
 
             {/* Item 1 */}
             <div className="flex items-start gap-4">
@@ -87,9 +87,10 @@ const Speciality = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[75vh] relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-32 lg:my-auto flex items-center"
+        className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[65vh] relative order-1 lg:order-2 ml-auto lg:mr-24 xl:mr-32 lg:my-auto flex items-center"
       >
-        <imgloading="lazy" 
+        <img
+loading="lazy" 
           src="/images/Imagefor8.png"
           alt="Chettinad Bites Speciality"
           className="w-full h-full object-cover rounded-xl"
@@ -107,3 +108,5 @@ const Speciality = () => {
 };
 
 export default Speciality;
+
+

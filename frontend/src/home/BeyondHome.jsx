@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const BeyondHome = () => {
   return (
-    <div className="w-full h-auto py-4 lg:py-6 flex flex-col lg:flex-row items-stretch justify-between overflow-hidden bg-transparent">
+    <div className="w-full h-auto lg:min-h-[100svh] py-4 lg:py-6 flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-transparent">
 
       {/* Left Column: Content */}
       <motion.div
@@ -13,11 +13,10 @@ const BeyondHome = () => {
         transition={{ duration: 0.8 }}
         className="w-full lg:w-[45%] xl:w-[40%] flex flex-col items-center justify-center px-12 py-6 sm:px-16 sm:py-10 lg:p-12 xl:p-16 h-auto lg:h-full order-2 lg:order-1"
       >
-        <div className="max-w-md mx-auto lg:ml-16 xl:ml-24 flex flex-col items-center text-center w-full">
+        <div className="max-w-md mx-auto lg:ml-20 xl:ml-28 flex flex-col items-center text-center w-full">
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
-            TAKING<br />
-            CHETTINAD<br />
+          <h2 className=" text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
+            TAKING CHETTINAD<br />
             BEYOND HOME.
           </h2>
 
@@ -69,12 +68,13 @@ const BeyondHome = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="w-full lg:w-[45%] xl:w-[45%] h-[50vh] lg:h-[50vh] xl:h-[55vh] relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-32 lg:-translate-x-8 xl:-translate-x-12 lg:my-auto flex items-center pt-8 lg:pt-0 px-4 lg:px-0"
+        className="w-full lg:w-[50%] xl:w-[50%] h-auto relative order-1 lg:order-2 ml-auto lg:mr-16 xl:mr-24 lg:-translate-x-8 xl:-translate-x-12 lg:my-auto flex items-center pt-8 lg:pt-0 px-4 lg:px-0 lg:translate-y-12 xl:translate-y-16"
       >
-        <imgloading="lazy" 
+        <img
+loading="lazy" 
           src="/images/Chettinad.png"
           alt="Chettinad Bites Food Court"
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-auto max-h-[70vh] lg:max-h-[85vh] object-contain rounded-xl"
           style={{
             maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%)',
             WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%)',
@@ -89,3 +89,5 @@ const BeyondHome = () => {
 };
 
 export default BeyondHome;
+
+

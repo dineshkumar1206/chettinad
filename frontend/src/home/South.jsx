@@ -8,16 +8,17 @@ const South = () => {
 
         {/* Left side: Person image */}
         <motion.div
-          className="w-full lg:w-4/12 flex justify-center lg:justify-start items-end z-10 h-auto lg:h-full lg:absolute lg:left-16 lg:translate-x-12 2xl:translate-x-0 lg:bottom-0 xl:bottom-0"
+          className="w-full lg:w-4/12 flex justify-center lg:justify-start items-end z-10 h-auto lg:h-full lg:absolute lg:left-16 lg:translate-x-32 2xl:translate-x-16 lg:bottom-0 xl:bottom-0"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <imgloading="lazy" 
+          <img
+loading="lazy" 
             src="/images/second-component.png"
             alt="Chettinad Person Thinking"
-            className="w-[65%] sm:w-[50%] md:w-[40%] lg:w-auto lg:h-[75%] max-h-[35vh] lg:max-h-none drop-shadow-xl object-contain object-bottom lg:object-left-bottom translate-y-0"
+            className="w-[65%] sm:w-[50%] md:w-[40%] lg:w-auto lg:h-[60%] max-h-[35vh] lg:max-h-none drop-shadow-xl object-contain object-bottom lg:object-left-bottom translate-y-0 "
           />
         </motion.div>
 
@@ -49,7 +50,8 @@ const South = () => {
           </div>
 
           {/* Center Image (Food Items) - Desktop/Tablet */}
-          <motion.imgloading="lazy" 
+          <motion.img
+loading="lazy" 
             src="/images/cm-2.webp"
             alt="South Indian Food Items"
             className="hidden sm:block w-[85%] lg:w-full max-w-2xl mx-auto drop-shadow-md my-1 lg:my-2 relative z-10"
@@ -60,7 +62,8 @@ const South = () => {
           />
 
           {/* Center Image (Food Items) - Mobile */}
-          <motion.imgloading="lazy" 
+          <motion.img
+loading="lazy" 
             src="/images/mobile-cm-1.webp"
             alt="South Indian Food Items Mobile"
             className="block sm:hidden w-[95%] mx-auto drop-shadow-md my-2 relative z-10"

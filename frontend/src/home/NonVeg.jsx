@@ -43,10 +43,11 @@ const NonVeg = () => {
           <div className="relative w-full max-w-6xl">
 
             {/* Desktop/Tablet Image */}
-            <imgloading="lazy" 
+            <img
+loading="lazy" 
               src="/images/cm-4.webp"
               alt="Chettinad Non-Vegetarian Dishes"
-              className="hidden sm:block w-[95%] lg:w-[90%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10 transform translate-x-2 lg:translate-x-8"
+              className="hidden sm:block w-[95%] lg:w-[80%] mx-auto h-auto max-h-[40vh] drop-shadow-2xl object-contain relative z-10 transform translate-x-2 lg:translate-x-8"
               style={{
                 WebkitMaskImage: 'linear-gradient(to right, black 96%, transparent 100%)',
                 maskImage: 'linear-gradient(to right, black 96%, transparent 100%)'
@@ -54,7 +55,8 @@ const NonVeg = () => {
             />
             
             {/* Mobile Image */}
-            <imgloading="lazy" 
+            <img
+loading="lazy" 
               src="/images/mobile-cm-3.webp"
               alt="Chettinad Non-Vegetarian Dishes Mobile"
               className="block sm:hidden w-[95%] mx-auto h-auto max-h-[45vh] drop-shadow-2xl object-contain relative z-10"
@@ -63,7 +65,7 @@ const NonVeg = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-12 w-full mt-auto"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-12 w-full mt-4 mb-12 lg:mb-32 xl:mb-40"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}

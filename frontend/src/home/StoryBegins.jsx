@@ -4,6 +4,17 @@ import { motion } from 'framer-motion';
 const StoryBegins = () => {
   return (
     <div className="w-full h-auto lg:min-h-[100svh] relative flex items-center justify-center py-12 lg:py-16 overflow-hidden bg-transparent">
+            {/* Top right quote image - absolutely positioned on large screens */}
+      <motion.img loading="lazy" 
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        src="/images/story-1.webp"
+        alt="Story quote desktop"
+        className="hidden lg:block absolute lg:right-24 xl:right-48 top-[15%] xl:top-[20%] w-[35%] max-w-[450px] object-contain z-20"
+      />
+
       <div className="w-full max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row items-stretch justify-between px-12 sm:px-16 md:px-20 lg:px-12 h-full relative z-10">
         
         {/* Left Column: Text */}
@@ -43,7 +54,7 @@ const StoryBegins = () => {
             <img loading="lazy" 
               src="/images/story-1.webp" 
               alt="Story quote" 
-              className="w-full max-w-md mx-auto mb-4 object-contain" 
+              className="block lg:hidden w-full max-w-md mx-auto mb-4 object-contain" 
             />
 
             <p className="text-sm sm:text-base text-[#1e2917] font-serif leading-snug mb-4">
@@ -81,10 +92,11 @@ const StoryBegins = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full lg:w-[30%] flex items-center justify-center lg:justify-end mb-6 lg:mb-0 lg:mt-10 relative top-[2%]"
         >
-          <imgloading="lazy" 
+          <img
+loading="lazy" 
             src="/images/ShriSuvarna.png"
             alt="Family eating Chettinad food"
-            className="w-[90%] mx-auto lg:w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-100 lg:scale-95 translate-x-0 lg:-translate-x-32 translate-y-0 lg:-translate-y-12"
+            className="w-[90%] mx-auto lg:w-full h-auto object-contain max-h-[85vh] lg:max-h-none transform scale-100 lg:scale-95 translate-x-0 lg:-translate-x-32 xl:-translate-x-40 translate-y-0 lg:translate-y-8"
             style={{ 
               maskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)',
               WebkitMaskImage: 'linear-gradient(to bottom, black 93%, transparent 100%)' 
@@ -98,3 +110,4 @@ const StoryBegins = () => {
 };
 
 export default StoryBegins;
+

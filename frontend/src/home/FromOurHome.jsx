@@ -58,9 +58,9 @@ const FromOurHome = () => {
 
           {/* Divider: House of Brands */}
           <div className="w-full flex items-center justify-center gap-4 mb-5">
-            <div className="h-[1px] bg-gray-400 flex-1 max-w-[60px]"></div>
+            <div className="h-[1px] bg-[#5f0201] flex-1 max-w-[60px]"></div>
             <p className="text-[#2b2b2b] font-sans font-medium text-[10px] sm:text-xs tracking-widest uppercase">HOUSE OF BRANDS</p>
-            <div className="h-[1px] bg-gray-400 flex-1 max-w-[60px]"></div>
+            <div className="h-[1px] bg-[#5f0201] flex-1 max-w-[60px]"></div>
           </div>
 
           {/* Logos */}
@@ -89,6 +89,7 @@ const FromOurHome = () => {
             />
             <img loading="lazy" 
               src="/images/naanstop-logo.png" 
+
               alt="Naanstop Kitchen" 
               className="h-16 sm:h-20 object-contain hover:scale-110 transition-transform duration-300"
             />
@@ -97,9 +98,9 @@ const FromOurHome = () => {
           {/* Footer Text */}
           <div className="flex flex-col items-center justify-center gap-1">
             <div className="flex items-center gap-4 w-full justify-center">
-              <div className="h-[1px] bg-gray-400 w-12"></div>
-              <p className="text-[#2b2b2b] font-serif text-xs sm:text-sm font-bold">4S Hospitality LLP</p>
-              <div className="h-[1px] bg-gray-400 w-12"></div>
+              <div className="h-[1px] bg-[#5f0201] w-12"></div>
+              <p className="text-[#5f0201] font-serif text-xs sm:text-sm font-bold lining-nums">4S Hospitality LLP</p>
+              <div className="h-[1px] bg-[#5f0201] w-12"></div>
             </div>
             <p className="text-[#4a4a4a] text-[10px] sm:text-xs mt-1 font-serif font-semibold">
               Operating partners: WeTreat INC. & Bombay Bytes Co.
@@ -121,3 +122,5 @@ const FromOurHome = () => {
 };
 
 export default FromOurHome;
+
+
