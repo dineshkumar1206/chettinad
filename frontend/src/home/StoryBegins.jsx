@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const StoryBegins = () => {
   return (
-    <div className="w-full h-auto lg:min-h-[100svh] relative flex items-center justify-center py-12 lg:py-16 overflow-hidden bg-transparent">
+    <div id="story" className="w-full h-auto lg:min-h-[100svh] relative flex items-center justify-center py-12 lg:py-16 overflow-hidden bg-transparent">
             {/* Top right quote image - absolutely positioned on large screens */}
       <motion.img loading="lazy" 
         initial={{ opacity: 0, x: 30 }}

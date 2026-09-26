@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="w-full h-[100svh] lg:h-screen relative flex items-center overflow-hidden pt-6 sm:pt-12 lg:pt-0 bg-transparent">
+    <div id="home" className="w-full h-[100svh] lg:h-screen relative flex items-center overflow-hidden pt-6 sm:pt-12 lg:pt-0 bg-transparent">
       <div className="w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 h-full gap-2 sm:gap-6 lg:gap-0">
         {/* Left side: Person image */}
         <motion.div 

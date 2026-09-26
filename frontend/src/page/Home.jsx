@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from 'react';
+import Navbar from '../components/Navbar';
 import Hero from '../home/Hero';
 
 // Lazy load components below the fold to improve initial load time
@@ -14,6 +15,7 @@ const FromOurHome = lazy(() => import('../home/FromOurHome'));
 const Home = () => {
   return (
     <div className="w-full min-h-screen flex flex-col">
+      <Navbar />
       {/* Hero section loads immediately as it is above the fold */}
       <Hero />
       

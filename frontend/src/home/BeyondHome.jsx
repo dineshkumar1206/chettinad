@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const BeyondHome = () => {
   return (
-    <div className="w-full h-auto lg:min-h-[100svh] py-4 lg:py-6 flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-transparent">
+    <div id="solution" className="w-full h-auto lg:min-h-[100svh] py-4 lg:py-6 flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-transparent">
 
       {/* Left Column: Content */}
       <motion.div
