@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Story = () => {
   return (
     <div className="w-full h-auto relative flex items-center justify-center py-8 lg:py-12 overflow-hidden">
-      
+
       {/* Left side image restored */}
       {/* <motion.img
 loading="lazy" 
@@ -19,7 +19,7 @@ loading="lazy"
 
       {/* Right side image - absolutely positioned */}
       <motion.img
-loading="lazy" 
+        loading="lazy"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
@@ -31,18 +31,18 @@ loading="lazy"
 
       {/* Top right side image - absolutely positioned */}
       <motion.img
-loading="lazy" 
+        loading="lazy"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         src="/images/cm-5-2.webp"
         alt="Chettinad Story Elements"
-        className="hidden lg:block absolute lg:right-36 xl:right-52 top-[35%] w-[18%] max-w-[280px] object-contain z-10"
+        className="hidden lg:block absolute lg:right-36 xl:right-52 top-[20%] w-[18%] max-w-[280px] object-contain z-10"
       />
 
       <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-12 sm:px-16 md:px-20 lg:px-16 relative z-10 text-center">
-        
+
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ loading="lazy"
           className="flex flex-col items-center max-w-4xl mx-auto lg:relative lg:-left-12 xl:-left-24"
         >
           <img loading="lazy" src="/images/cm-5-1.webp" alt="Now you're probably wondering" className="h-16 sm:h-20 md:h-24 object-contain mb-4" />
-          
+
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-serif text-[#1e2917] font-bold leading-[1.1] tracking-tight uppercase mb-2">
             BUT WHAT MAKES<br />
             IT CHETTINAD?
@@ -59,7 +59,7 @@ loading="lazy"
 
           {/* Mobile image version if needed */}
           <motion.img
-loading="lazy" 
+            loading="lazy"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
@@ -80,7 +80,7 @@ loading="lazy"
           <p className="text-xl sm:text-2xl md:text-3xl text-[#1e2917] font-serif mt-1 mb-1">
             It isn't simply the heat of the chilli.
           </p>
-          
+
           <p className="text-3xl sm:text-4xl md:text-5xl text-[#1e2917] font-serif font-bold mb-2">
             It's the layers.
           </p>
@@ -91,7 +91,7 @@ loading="lazy"
 
           {/* Stacked layout for the bottom text */}
           <div className="flex flex-col items-center justify-center gap-6 text-center w-full mt-2 px-4 sm:px-12 md:px-24">
-            
+
             <div className="flex flex-col max-w-md mx-auto text-center">
               <h3 className="font-bold text-[#1e2917] text-lg sm:text-xl mb-2 font-serif">
                 Chettinad's flavours didn't grow in isolation.
@@ -119,7 +119,7 @@ loading="lazy"
 
           {/* Mobile image version for leaves (cm-5-2.webp) at the bottom */}
           <motion.img
-loading="lazy" 
+            loading="lazy"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
