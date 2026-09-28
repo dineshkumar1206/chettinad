@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Story = () => {
   return (
-    <div className="w-full min-h-screen relative flex items-center justify-center py-12 lg:py-20 overflow-hidden">
+    <div className="w-full h-auto relative flex items-center justify-center py-8 lg:py-12 overflow-hidden">
       
       {/* Left side image restored */}
       {/* <motion.img

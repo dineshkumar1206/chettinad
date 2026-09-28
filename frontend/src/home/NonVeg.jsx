@@ -80,7 +80,7 @@ const NonVeg = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-12 w-full mt-4 mb-12 lg:mb-32 xl:mb-40"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-12 w-full mt-4 mb-8 lg:mb-12 xl:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
