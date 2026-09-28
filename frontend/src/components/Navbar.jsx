@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import ContactModal from './ContactModal';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  const token = localStorage.getItem('adminToken');
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Story', href: '#story' },
-    { name: 'Solution', href: '#solution' },
-    { name: 'Recipes & Stories', href: '#recipes' },
+    { name: 'Home', href: '/#home' },
+    { name: 'Story', href: '/#story' },
+    { name: 'Solution', href: '/#solution' },
+    { name: 'Recipes & Stories', href: '/blogs' },
     { name: 'Contact us', href: '#' },
+    { name: token ? 'Dashboard' : 'Login', href: token ? '/dashboard' : '/admin/login' },
   ];
 
   const handleLinkClick = (e, link) => {
@@ -18,6 +24,17 @@ const Navbar = () => {
       e.preventDefault();
       setIsContactModalOpen(true);
       setIsOpen(false);
+    } else if (link.href === '/dashboard' || link.href === '/admin/login' || link.href === '/blogs') {
+      e.preventDefault();
+      navigate(link.href);
+      setIsOpen(false);
+    } else if (link.href.startsWith('/#')) {
+      if (location.pathname !== '/') {
+        e.preventDefault();
+        navigate(link.href);
+        setIsOpen(false);
+      }
+      // If already on '/', smooth scroll will handle the hash link
     }
   };
 

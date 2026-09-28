@@ -2,8 +2,16 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const multer = require('multer');
+const sharp = require('sharp');
+const fs = require('fs');
+const path = require('path');
 const sequelize = require('./config/database');
 const Contact = require('./models/Contact');
+const Admin = require('./models/Admin');
+const Blog = require('./models/Blog');
 
 const app = express();
 
@@ -12,7 +20,9 @@ const allowedOrigins = [
   'http://localhost:5173',
   'https://chettinad.co.in',
   'https://www.chettinad.co.in',
-  'https://chettinad-pi.vercel.app'
+  'https://chettinad-pi.vercel.app',
+  'https://amigowebster.in',
+  'https://www.amigowebster.in'
 ];
 
 app.use(cors({
@@ -27,6 +37,17 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Setup uploads directory
+const uploadDir = path.join(__dirname, 'uploads', 'blogs');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Multer memory storage config
+const storage = multer.memoryStorage();
+const upload = multer({ storage });
+
 // Test DB
 sequelize.authenticate()
   .then(() => console.log('Database connected...'))
@@ -34,66 +55,32 @@ sequelize.authenticate()
 
 // Sync DB
 sequelize.sync()
-  .then(() => console.log('Database synced'))
+  .then(async () => {
+    console.log('Database synced');
+    
+    // Create default admin if not exists
+    const adminCount = await Admin.count();
+    if (adminCount === 0) {
+      const defaultUser = process.env.ADMIN_USERNAME || 'admin';
+      const defaultPass = process.env.ADMIN_PASSWORD || 'admin123';
+      const hashedPassword = await bcrypt.hash(defaultPass, 10);
+      await Admin.create({ username: defaultUser, password: hashedPassword });
+      console.log(`Default admin created: ${defaultUser} / ${defaultPass}`);
+    }
+  })
   .catch(err => console.log('Error syncing: ' + err));
 
-// Setup Nodemailer Transporter
-const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
-  port: process.env.EMAIL_PORT,
-  secure: process.env.EMAIL_PORT == 465, // true for 465, false for other ports
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
-  }
-});
+// Import Routes
+const adminRoutes = require('./routes/adminRoutes');
+const blogRoutes = require('./routes/blogRoutes');
+const contactRoutes = require('./routes/contactRoutes');
 
-// Contact Form Endpoint (Handling both local and subfolder routes)
-app.post(['/api/contact', '/chettinad/api/contact'], async (req, res) => {
-  try {
-    const { name, email, phone, message } = req.body;
-
-    // Save to Database
-    const newContact = await Contact.create({
-      name,
-      email,
-      phone,
-      message
-    });
-
-    // Send Email
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.RECEIVER_EMAIL || process.env.EMAIL_USER,
-      cc: process.env.CC_EMAIL,
-      subject: `New Contact Form Submission from ${name}`,
-      html: `
-        <h3>New Contact Details</h3>
-        <ul>
-          <li><strong>Name:</strong> ${name}</li>
-          <li><strong>Email:</strong> ${email}</li>
-          <li><strong>Phone:</strong> ${phone}</li>
-        </ul>
-        <h3>Message:</h3>
-        <p>${message}</p>
-      `
-    };
-
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.log('Error sending email:', error);
-        // We still return success because it was saved to DB, but log the email error
-      } else {
-        console.log('Email sent: ' + info.response);
-      }
-    });
-
-    res.status(200).json({ success: true, message: 'Message sent successfully!', data: newContact });
-  } catch (error) {
-    console.error('Error in /api/contact:', error);
-    res.status(500).json({ success: false, message: 'Server Error' });
-  }
-});
+// Use Routes
+app.use('/api/admin', adminRoutes);
+app.use('/chettinad/api/admin', adminRoutes); // To support existing dual-route pattern
+app.use('/api/blogs', blogRoutes);
+app.use('/api/contact', contactRoutes);
+app.use('/chettinad/api/contact', contactRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

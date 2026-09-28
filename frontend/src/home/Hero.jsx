@@ -42,7 +42,7 @@ const Hero = () => {
           <motion.img 
             src="/images/chettinad-logo.png" 
             alt="Chettinad Bites" 
-            className="w-24 sm:w-28 md:w-32 lg:w-28 mt-10 sm:mt-0 mb-4 lg:mb-6" 
+            className="w-24 sm:w-28 md:w-32 lg:w-28 mt-16 sm:mt-8 lg:mt-12 mb-4 lg:mb-6" 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -50,7 +50,7 @@ const Hero = () => {
           />
           
           {/* Headline */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[54px] font-serif text-[#2a2a1a] font-bold leading-[1.05] mb-2 lg:mb-3 tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[54px] font-serif text-[#2a3822] font-bold leading-[1.05] mb-2 lg:mb-3 tracking-tight">
             There is a side of<br />South Indian food<br />you may not have<br />discovered yet.
           </h1>
           
