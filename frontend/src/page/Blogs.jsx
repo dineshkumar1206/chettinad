@@ -88,7 +88,13 @@ const Blogs = () => {
                     {blog.title}
                   </h3>
                   <p className="text-[#2a3822]/70 mb-6 line-clamp-3 leading-relaxed text-sm font-medium">
-                    {blog.content}
+                    {(() => {
+                      const pTags = [...(blog.content || '').matchAll(/<p[^>]*>(.*?)<\/p>/gi)];
+                      if (pTags.length > 0) {
+                        return pTags.map(p => p[1].replace(/<[^>]*>?/gm, '').trim()).join(' ');
+                      }
+                      return (blog.content || '').replace(/<[^>]*>?/gm, '').trim();
+                    })()}
                   </p>
                   <div className="mt-auto flex items-center text-[#2a3822] group-hover:text-amber-700 font-bold text-xs tracking-widest uppercase transition-colors">
                     Read Story

@@ -92,19 +92,19 @@ const BlogDetail = () => {
             />
           </div>
 
-          {/* Heading and Content area */}
+          {/* Heading and Content area (Title is now provided inside the HTML content) */}
           <div className="w-full text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#2a3822] font-serif drop-shadow-lg leading-tight mb-4">
-              {blog.title}
-            </h1>
-            <p className="text-[#2a3822]/70 font-semibold tracking-widest uppercase text-sm mb-10 font-sans">
+            {/* The blog.title is not rendered here to avoid duplication with the <h2> inside the HTML content, 
+                but it is still used for SEO (helmet) and the Blog cards on the main page. */}
+            <p className="text-[#2a3822]/70 font-semibold tracking-widest uppercase text-sm mb-10 font-sans mt-4">
               Published {new Date(blog.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
 
-          <div className="prose prose-lg prose-amber max-w-none text-[#2a3822] font-serif leading-relaxed whitespace-pre-wrap">
-            {blog.content}
-          </div>
+          <div 
+            className="w-full text-[#2a3822] font-serif leading-relaxed blog-html-content mx-auto"
+            dangerouslySetInnerHTML={{ __html: blog.content }}
+          />
         </article>
       </div>
     </div>

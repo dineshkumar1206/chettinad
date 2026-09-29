@@ -8,3 +8,170 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Premium Blog HTML Content Styles */
+.blog-html-content {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #2a3822;
+  line-height: 1.8;
+  font-size: 1.125rem; /* 18px */
+}
+
+/* Paragraphs */
+.blog-html-content p {
+  margin-bottom: 1.5em;
+}
+
+/* Category Top Title (e.g. <span class="category">) */
+.blog-html-content .category {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  color: #8a3020;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Main Headings */
+.blog-html-content h1,
+.blog-html-content h2 {
+  font-family: ui-serif, Georgia, Cambria, serif;
+  color: #2a3822;
+  font-size: 2.25rem; /* 36px */
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Sub Headings */
+.blog-html-content h3 {
+  font-family: ui-serif, Georgia, Cambria, serif;
+  color: #8a3020;
+  font-size: 1.75rem; /* 28px */
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.blog-html-content h4,
+.blog-html-content h5,
+.blog-html-content h6 {
+  font-family: ui-serif, Georgia, Cambria, serif;
+  color: #2a3822;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Links */
+.blog-html-content a {
+  color: #8a3020;
+  text-decoration: underline;
+  text-decoration-color: rgba(138, 48, 32, 0.3);
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+}
+.blog-html-content a:hover {
+  text-decoration-color: #8a3020;
+}
+
+/* Lists */
+.blog-html-content ul,
+.blog-html-content ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+.blog-html-content ul {
+  list-style-type: disc;
+}
+.blog-html-content ol {
+  list-style-type: decimal;
+}
+.blog-html-content li {
+  margin-bottom: 0.5em;
+}
+
+/* "Continue the Story" Box */
+.blog-html-content .continue-story-box {
+  border: 1px solid rgba(138, 48, 32, 0.2);
+  border-left: 4px solid #8a3020;
+  padding: 1.5rem;
+  margin: 3rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: transparent; /* No BG color as requested */
+}
+.blog-html-content .continue-story-box h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-family: ui-serif, Georgia, serif;
+  text-transform: uppercase;
+  color: #8a3020;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.blog-html-content .continue-story-box p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Tables */
+.blog-html-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.blog-html-content th,
+.blog-html-content td {
+  border: 1px solid rgba(42, 56, 34, 0.15);
+  padding: 1rem;
+  text-align: left;
+}
+.blog-html-content th {
+  background-color: rgba(42, 56, 34, 0.03);
+  font-weight: 700;
+  color: #2a3822;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* Blockquotes */
+.blog-html-content blockquote {
+  border-left: 4px solid #d8cdb8;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #556b46;
+}
+
+/* Mobile Responsiveness adjustments for typography */
+@media (max-width: 768px) {
+  .blog-html-content {
+    font-size: 1rem; /* 16px */
+    padding: 0 1rem; /* "pillar and wall inside" care for mobile */
+  }
+  .blog-html-content h1,
+  .blog-html-content h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+  .blog-html-content h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+  .blog-html-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
