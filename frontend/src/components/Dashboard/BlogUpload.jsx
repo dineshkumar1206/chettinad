@@ -113,14 +113,14 @@ const BlogUpload = () => {
   return (
     <div className="w-full h-full relative">
       {/* Header section */}
-      <div className="flex justify-between items-center mb-8 border-b border-slate-200 pb-4">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-6 md:mb-8 border-b border-slate-200 pb-4">
         <div>
-          <h2 className="text-3xl font-bold font-serif text-[#2a3822]">Manage Blogs</h2>
-          <p className="text-slate-500 mt-1 text-sm">View, edit, and publish your recipes and stories.</p>
+          <h2 className="text-2xl md:text-3xl font-bold font-serif text-[#2a3822]">Manage Blogs</h2>
+          <p className="text-slate-500 mt-1 text-xs md:text-sm">View, edit, and publish your recipes and stories.</p>
         </div>
         <button 
           onClick={openModalForNew}
-          className="bg-[#8a3020] hover:bg-[#6b2518] text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 shadow-md flex items-center"
+          className="w-full sm:w-auto justify-center bg-[#8a3020] hover:bg-[#6b2518] text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-colors duration-300 shadow-md flex items-center text-sm md:text-base"
         >
           <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />

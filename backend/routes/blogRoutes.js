@@ -4,7 +4,23 @@ const multer = require('multer');
 const blogController = require('../controllers/blogController');
 const auth = require('../middleware/auth');
 
-const storage = multer.memoryStorage();
+const path = require('path');
+const fs = require('fs');
+
+const uploadDir = path.join(__dirname, '..', 'uploads', 'blogs');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, uploadDir);
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    cb(null, 'blog-' + uniqueSuffix + path.extname(file.originalname));
+  }
+});
 const upload = multer({ storage });
 
 router.get('/', blogController.getAllBlogs); // Public

@@ -43,6 +43,7 @@ if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/chettinad/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Multer memory storage config
 const storage = multer.memoryStorage();
@@ -79,6 +80,7 @@ const contactRoutes = require('./routes/contactRoutes');
 app.use('/api/admin', adminRoutes);
 app.use('/chettinad/api/admin', adminRoutes); // To support existing dual-route pattern
 app.use('/api/blogs', blogRoutes);
+app.use('/chettinad/api/blogs', blogRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/chettinad/api/contact', contactRoutes);
 

@@ -24,15 +24,7 @@ exports.createBlog = async (req, res) => {
     let imageUrl = null;
 
     if (req.file) {
-      const filename = `blog-${Date.now()}.webp`;
-      const filepath = path.join(uploadDir, filename);
-
-      await sharp(req.file.buffer)
-        .resize({ width: 1200, withoutEnlargement: true })
-        .webp({ quality: 80 })
-        .toFile(filepath);
-
-      imageUrl = `/uploads/blogs/${filename}`;
+      imageUrl = `/uploads/blogs/${req.file.filename}`;
     }
 
     const newBlog = await Blog.create({ title, content, image: imageUrl });
@@ -53,20 +45,12 @@ exports.updateBlog = async (req, res) => {
 
     let imageUrl = blog.image;
     if (req.file) {
-      const filename = `blog-${Date.now()}.webp`;
-      const filepath = path.join(uploadDir, filename);
-
-      await sharp(req.file.buffer)
-        .resize({ width: 1200, withoutEnlargement: true })
-        .webp({ quality: 80 })
-        .toFile(filepath);
-
       if (blog.image) {
         const oldPath = path.join(__dirname, '..', blog.image);
         if (fs.existsSync(oldPath)) fs.unlinkSync(oldPath);
       }
 
-      imageUrl = `/uploads/blogs/${filename}`;
+      imageUrl = `/uploads/blogs/${req.file.filename}`;
     }
 
     await blog.update({ title, content, image: imageUrl });
