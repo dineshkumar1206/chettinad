@@ -58,16 +58,16 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden absolute right-4 flex items-center">
+          <div className="md:hidden absolute right-4 sm:right-6 flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
-              className="text-[#2a3822] hover:text-[#8a3020] focus:outline-none transition-colors cursor-pointer"
+              className="text-[#2a3822] bg-[#e7dfd1]/90 backdrop-blur-sm p-2 rounded-lg shadow-md border border-[#2a3822]/10 hover:text-[#8a3020] hover:bg-[#e7dfd1] focus:outline-none transition-all cursor-pointer"
             >
-              <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
             </button>

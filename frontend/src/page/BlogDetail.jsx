@@ -54,7 +54,7 @@ const BlogDetail = () => {
   const imageUrl = blog.image ? `https://chettinad.co.in${blog.image}` : 'https://chettinad.co.in/images/hero-1.webp';
 
   return (
-    <div className="min-h-screen pt-32 pb-20 relative z-10 px-4 sm:px-8 md:px-16 lg:pl-[14vw] lg:pr-[8vw] xl:pl-[16vw] xl:pr-[10vw] font-sans">
+    <div className="min-h-screen pt-32 pb-20 relative z-10 pl-[16vw] pr-[12vw] sm:px-12 md:px-16 lg:pl-[14vw] lg:pr-[8vw] xl:pl-[16vw] xl:pr-[10vw] font-sans">
       <Helmet>
         <title>{blog.title} | Chettinad Bites</title>
         <meta name="description" content={excerpt} />
